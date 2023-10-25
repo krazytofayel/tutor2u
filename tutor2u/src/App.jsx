@@ -15,6 +15,8 @@ const App = () => {
         <Route path="/find_tutor" element={<FindTutor/>}/>
 
         {/* efewsrweachanges rastetretertert */}
+         {/* efewsrweachanges rastetretertert */}
+          {/* efewsrweachanges rastetretertert */}
 
       </Routes>
 
