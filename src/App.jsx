@@ -13,6 +13,7 @@ const App = () => {
         <Route path="/contact_us" element={<ContactUs/>} />
         <Route path="/request_tutor" element={<RequestTutor/>} />
         <Route path="/find_tutor" element={<FindTutor/>}/>
+{/*  <Route path="/find_tutor" element={<FindTutor/>}/> */}
 
       </Routes>
 
