@@ -6,7 +6,7 @@ const Cards = ({ carditem }) => {
   return (
     <>
 
-      <div className="w-[15rem]  border border-blue-700 p-2 rounded-lg">
+      <div className="w-[15rem]  shadow-lg border border-blue-700 p-2 rounded-lg">
         <div className="flex gap-5 justify-center items-center ">
           <div >
             <img className="h-20 w-20 rounded" src={image } alt="404" />

@@ -137,7 +137,7 @@ const Home = () => {
 
               <h1 className=" text-3xl max-w-3xl mx-auto text-center font-medium mb-10">Time to elevate your learning, Find a tutor in any subject below.</h1>
 
-              <div className="grid lg:grid-cols-4 justify-between items-center  gap-5 mb-10 ">
+              <div className="grid grid-cols-1 lg:grid-cols-4 justify-between items-center  gap-5 mb-10 ">
 
                 {
                   Carddata.map((carditem) => (
@@ -147,14 +147,6 @@ const Home = () => {
                   ))
 
                 }
-
-
-
-
-
-
-
-
 
 
               </div>
@@ -183,7 +175,7 @@ const Home = () => {
             <h1 className=" text-3xl max-w-3xl mx-auto text-center font-medium mb-10">Every Tutor is Professional and Highly Qualified</h1>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-2 p-2 lg:p-0">
+          <div className="grid grid-cols-1 md:grid-cols-5 items-center gap-2 p-2 lg:p-0">
 
 
             {
