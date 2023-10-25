@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbars from "../../SharedComponents/Navbar/Navbars";
 import aboutsideimg from "../../../assets/AboutUs/about-us-side-banner.png";
 import { useForm } from 'react-hook-form';
+
 const RequestTutor = () => {
   const [navfix, setNavfix] = useState(false);
   const { register, handleSubmit, errors } = useForm(); // initialize the hook
@@ -14,16 +15,17 @@ const RequestTutor = () => {
   }
   window.addEventListener("scroll", setFixed);
 
-  const onSubmit = (data) => {
+  const onSubmitButton = (data) => {
     console.log(data);
   };
+
   return (
     <>
-      {/* <div>
+      <div>
         <div className={`z-10 ${navfix ? "top-0 h-[10%] w-full fixed bg-[#523970]" : ""}`}>
           <Navbars />
         </div>
-      </div> */}
+      </div>
       {/* About top banner start */}
 
       {/* <section className="AboutUs_Top_Banner bg-[#2C6777]">
@@ -51,18 +53,18 @@ const RequestTutor = () => {
           </div>
         </div>
       </section> */}
-        <section className="bg-[#2C6777] ">
-            <div className="xl:w-[55rem] lg:w-[38rem] mx-auto py-10 text-center">
-              <h1 className="text-white text-[35px] xl:text-[50px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
-                Request a Tutor
-              </h1>
-              <p className="leading-relaxed xl:text-[30px] text-xl text-white mb-4 lg:font-medium  md:font-semibold font-medium  mx-4">
-                Looking for your desired tutor at Tutor2U? let us do the work for you.If you need a tutor, fill out the form below. We will contact you.
+      <section className="bg-[#2C6777] ">
+        <div className="xl:w-[55rem] lg:w-[38rem] mx-auto py-10 text-center">
+          <h1 className="text-white text-[35px] xl:text-[50px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
+            Request a Tutor
+          </h1>
+          <p className="leading-relaxed xl:text-[30px] text-xl text-white mb-4 lg:font-medium  md:font-semibold font-medium  mx-4">
+            Looking for your desired tutor at Tutor2U? let us do the work for you.If you need a tutor, fill out the form below. We will contact you.
 
-              </p>
-            </div>
+          </p>
+        </div>
 
-          </section>
+      </section>
 
 
       {/* About top banner end */}
@@ -74,7 +76,7 @@ const RequestTutor = () => {
 
       <section className="Contact_Us_Middle ">
         <div className="bg-[#DCECFA] lg:p-16">
-        
+
 
 
           <div className="container mx-auto">
@@ -84,37 +86,23 @@ const RequestTutor = () => {
             <div className="grid grid-cols-12 gap-4 p-2">
 
               <div className="col-span-12 lg:col-span-9 mb-6 lg:mb-0">
-                
 
-                <form action="" onSubmit={handleSubmit(onSubmit)}>
+
+                <form action="" onSubmit={handleSubmit(onSubmitButton)}>
                   <div className="">
                     <div className="form_Contact bg-white rounded-xl p-4 py-10">
-                    {/* <h3 className="text-lg font-normal md:mx-6 mx-4 mb-2  lg:text-start text-center">If you need a tutor, fill out the form below. We will contact you.</h3> */}
                       <div className="grid md:grid-cols-2 md:gap-6">
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 ">First Name:</label>
-                          <input type="text" id="First_Name" className="w-full p-2.5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg " placeholder="Enter your first name" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Full Name:</label>
+                          <input type="text" id="full_name" className="w-full p-2.5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg " placeholder="Enter your first name" required
 
-                            {...register('First_Name')}
+                            {...register('full-name')}
                           />
                         </div>
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Last Name:</label>
-                          <input type="text" id="Last_Name" className="w-full p-2.5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg" placeholder="Enter your last name" required
 
-
-                            {...register('Last_Name')}
-                          />
-                        </div>
-
-                      </div>
-
-                      <div className="grid md:grid-cols-2 md:gap-6">
-
-                        <div className="mb-2">
-
-                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Select an option:</label>
-                          <select id="countries" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Select Medium:</label>
+                          <select id="select-an-medium" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
                             <option selected>Select Medium</option>
                             <option value="US">United States</option>
                             <option value="CA">Canada</option>
@@ -124,6 +112,10 @@ const RequestTutor = () => {
 
                         </div>
 
+
+                      </div>
+
+                      <div className="grid md:grid-cols-2 md:gap-6">
                         <div className="mb-2">
 
                           <label className="block mb-2 text-sm font-medium text-gray-900 ">Select Class:</label>
@@ -137,16 +129,6 @@ const RequestTutor = () => {
 
                         </div>
 
-                      </div>
-
-                      <div className="mb-2">
-                        <label className="block mb-2 text-sm font-medium text-gray-900 ">Student Institute Name:</label>
-                        <input type="text" id="Subject" className="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  p-2.5" placeholder="Enter Institute Name" required
-
-                          {...register("Subject")}
-                        />
-                      </div>
-                      <div className="grid md:grid-cols-2 md:gap-6">
                         <div className="mb-2">
                           <label className="block mb-2 text-sm font-medium text-gray-900 ">Select Subject:</label>
                           <select id="countries" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
@@ -158,6 +140,18 @@ const RequestTutor = () => {
                           </select>
                         </div>
 
+
+
+                      </div>
+
+                      <div className="mb-2">
+                        <label className="block mb-2 text-sm font-medium text-gray-900 ">Student Institute Name:</label>
+                        <input type="text" id="institute-name" className="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  p-2.5" placeholder="Enter Institute Name" required
+
+                          {...register("institute-name")}
+                        />
+                      </div>
+                      <div className="grid md:grid-cols-2 md:gap-6">
                         <div className="mb-2">
 
                           <label className="block mb-2 text-sm font-medium text-gray-900 ">Days per Week:</label>
@@ -170,11 +164,6 @@ const RequestTutor = () => {
                           </select>
 
                         </div>
-
-
-
-                      </div>
-                      <div className="grid md:grid-cols-2 md:gap-6">
                         <div className="mb-2">
 
                           <label className="block mb-2 text-sm font-medium text-gray-900 ">Gender of Student:</label>
@@ -187,6 +176,13 @@ const RequestTutor = () => {
                           </select>
 
                         </div>
+
+
+
+
+
+                      </div>
+                      <div className="grid md:grid-cols-2 md:gap-6">
                         <div className="mb-2">
 
                           <label className="block mb-2 text-sm font-medium text-gray-900 ">Salary Range:</label>
@@ -199,13 +195,7 @@ const RequestTutor = () => {
                           </select>
 
                         </div>
-
-
-
-
-                      </div>
-
-                      <div className="mb-2">
+                        <div className="mb-2">
 
                         <label className="block mb-2 text-sm font-medium text-gray-900 ">Desired Tutor Gender:</label>
                         <select id="countries" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
@@ -217,22 +207,27 @@ const RequestTutor = () => {
                         </select>
 
                       </div>
+
+                      </div>
                       <div className="mb-2">
                         <label className="block mb-2 text-sm font-medium text-gray-900 ">Detail Address:</label>
-                        <input type="text" id="Last_Name" className="w-full p-2.5 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg" placeholder="Enter detail address" required
+                        <textarea type="text" rows="2" id="detail-address" className="w-full p-2.5 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg" placeholder="Enter detail address" required
 
 
-                          {...register('Last_Name')}
+                          {...register('detail-address')}
                         />
                       </div>
+
+                     
+                    
                       <div className="grid md:grid-cols-2 md:gap-6">
 
                         <div className="mb-2">
                           <div className="mb-2">
                             <label className="block mb-2 text-sm font-medium text-gray-900 ">Mobile Number:</label>
-                            <input type="text" id="First_Name" className="w-full p-2.5 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg " placeholder="Enter your detail number" required
+                            <input type="text" id="mobile-number" className="w-full p-2.5 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg " placeholder="Enter your detail number" required
 
-                              {...register('First_Name')}
+                              {...register('mobile-number')}
                             />
                           </div>
 
@@ -242,9 +237,9 @@ const RequestTutor = () => {
 
                           <div className="mb-2">
                             <label className="block mb-2 text-sm font-medium text-gray-900 ">Email Address:</label>
-                            <input type="text" id="First_Name" className="w-full p-2.5 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg " placeholder="Enter your email address" required
+                            <input type="text" id="email-address" className="w-full p-2.5 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg " placeholder="Enter your email address" required
 
-                              {...register('First_Name')}
+                              {...register('email-address')}
                             />
                           </div>
 
@@ -303,13 +298,6 @@ const RequestTutor = () => {
                   </div>
 
                 </div>
-
-
-
-
-
-
-
               </div>
             </div>
           </div>
