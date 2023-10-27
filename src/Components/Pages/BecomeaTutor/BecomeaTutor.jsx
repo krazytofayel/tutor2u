@@ -15,7 +15,6 @@ const BecomeaTutor = () => {
     } else {
       setNavfix(false)
     }
-
   }
   window.addEventListener('scroll', setFixed)
 
