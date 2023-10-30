@@ -7,6 +7,7 @@ import Carddata from '../../SharedComponents/Data/HomeSubjectCarddata/homesubjec
 import ExploreTutordata from '../../SharedComponents/Data/ExploreTutordata/ExploreTutordata.json'
 import Cards from '../Props/Cards'
 import ExploreTutor from "../Props/ExploreTutor";
+import Slider from "../../SharedComponents/Slider/Slider";
 
 
 const Home = () => {
@@ -192,6 +193,12 @@ const Home = () => {
 
         </div>
 
+
+
+      </section>
+      <section>
+
+        <Slider></Slider>
       </section>
 
     
