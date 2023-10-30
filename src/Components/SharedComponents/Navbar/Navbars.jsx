@@ -56,7 +56,7 @@ const Navbars = () => {
 				
 
 				<button className="bg-[#C8D8E5] text-[#089bab] px-5 py-1 rounded font-bold truncate">
-					<Link to="/login">Become a tutor</Link>
+					<Link to="/becomea_tutor">Become a tutor</Link>
 				</button>
 
 				<button className="bg-[#089bab] text-white px-5 py-1 rounded font-bold truncate">
