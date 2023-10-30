@@ -7,6 +7,7 @@ import FindTutor from './Components/Pages/FindTutor/FindTutor';
 import BecomeaTutor from './Components/Pages/BecomeaTutor/BecomeaTutor';
 import NotFoundpage from './Components/Pages/NotFoundPage/NotFoundPage';
 import TutionJob from './Components/Pages/TutionJob/TutionJob';
+import TutionJobDetails from './Components/Pages/TutionJobDetails/TutionJobDetails';
 const App = () => {
   return (
     <>
@@ -19,6 +20,14 @@ const App = () => {
         <Route path='/becomea_tutor' element={<BecomeaTutor />} />
         <Route path='/tutor_job' element={<TutionJob />} />
         {/*  <Route path="/find_tutor" element={<FindTutor/>}/> */}
+
+
+
+
+        {/* Tution job details dami route */}
+
+        <Route path='/tutor_job_details' element={<TutionJobDetails />} />
+
 {/*-------------------- NotFound page start--------------------- */}
         <Route path="/404" element={<NotFoundpage />} />
         <Route path="*" element={<Navigate to="/404" />} />

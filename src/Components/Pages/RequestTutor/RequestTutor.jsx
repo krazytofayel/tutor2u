@@ -28,31 +28,7 @@ const RequestTutor = () => {
       </div>
       {/* About top banner start */}
 
-      {/* <section className="AboutUs_Top_Banner bg-[#2C6777]">
-        <div className="container px-5 py-10 lg:py-14 md:py-10  mx-auto">
-          <div className=" mx-auto flex flex-wrap px-5 md:flex-row flex-col items-center">
-            <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
-              <div className="xl:w-[45rem]">
-                <h1 className="text-white text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
-                  Request a Tutor
-                </h1>
-
-
-                
-
-                <p className="leading-relaxed xl:text-[20px] text-lg text-white mb-4 lg:font-semibold md:font-semibold font-normal">
-                  Looking for your desired tutor at Tutor2U? let us do the work for you.
-
-                </p>
-              </div>
-            </div>
-
-            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center">
-              <img alt="Top-Banner-Side-Image" className=" " src={aboutsideimg} />
-            </div>
-          </div>
-        </div>
-      </section> */}
+   
       <section className="bg-[#2C6777] ">
         <div className="xl:w-[55rem] lg:w-[38rem] mx-auto py-10 text-center">
           <h1 className="text-white text-[35px] xl:text-[50px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
