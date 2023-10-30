@@ -3,8 +3,8 @@
 const TutionJob = () => {
   return (
   <>
-   <section className="Contact_Us_Middle  ">
-        <div className="bg-[#F0F8FF] lg:p-16">
+   <section className="Contact_Us_Middle ">
+        <div className="h-screen  bg-[#F0F8FF] lg:p-16">
 
 
           <div className="container mx-auto">
