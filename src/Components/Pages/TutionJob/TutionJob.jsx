@@ -1,9 +1,14 @@
 
-
+import { RxCross2 } from 'react-icons/rx';
 const TutionJob = () => {
+  const ButtonData = [
+    { id: 1, buttoncontant: "Math" },
+    { id: 2, buttoncontant: "English" },
+    { id: 3, buttoncontant: "History" },
+  ];
   return (
-  <>
-   <section className="Contact_Us_Middle ">
+    <>
+      <section className="Contact_Us_Middle ">
         <div className="h-screen  bg-[#F0F8FF] lg:p-16">
 
 
@@ -16,63 +21,66 @@ const TutionJob = () => {
               <div className="col-span-12 lg:col-span-9 mb-6 lg:mb-0">
 
                 <form action="" >
-                
-                <div  className="w-full  p-4 mt-5 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8">
+
+                  <div className="w-full rounded-xl   text-center bg-white border border-gray-200  shadow">
 
 
-<div>
-  <div>
+                    <div className="flex justify-between p-2 text-base font-semibold bg-[#F3F3F3]  rounded-t-xl   border-b-2 w-full  ">
+                      <p> Need Male Tutor For Class 6(EM)</p>
+                      <p>ID# T_6787</p>
+                    </div>
 
-    <div className="flex flex-wrap items-center justify-between ">
-
-      <div className="flex space-x-2 justify-center items-center">
-       
-
-
-
-        <div className="flex flex-col ">
-          <p className="text-start font-bold">oooo</p>
-          <div className="flex flex-wrap space-x-1">
-            <svg className="w-4 h-4  text-yellow-300 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-            </svg>
-            <p className="ml-2  text-sm font-medium text-gray-900 ">4oooo</p>
-           
-            <a href="#" className="text-sm font-medium truncate text-gray-900 underline hover:no-underline ">#oooo</a>
-          </div>
-        </div>
+                    <div className="p-2">
 
 
 
 
-      </div>
-      <div>
-        <p className="text-xs truncate">starting from</p>
-        <p className="font-bold">oooo/hr</p>
-      </div>
-    </div>
+                      <div className="flex justify-between font-bold">
+                        <div>
+                          <p > <span className="font-semibold text-[#2c6777] in">Catagory:</span> English Medium</p>
+                        </div>
+                        <div>
+                          <p > <span className="font-semibold text-[#2c6777]">Class</span> :English Medium</p>
+                        </div>
+                        <div>
+                          <p > <span className="font-semibold text-[#2c6777]">Gender</span> :English Medium</p>
+                        </div>
 
-  </div>
-</div>
-<div className="mt-2">
-  {/* <h5 className="mb-2 text-3xl text-start font-bold text-gray-900 ">Work fast from anywhere</h5> */}
-  <p className="mb-2 text-start text-gray-500 text-sm line-clamp-3">ooo</p>
-</div>
 
-<div className="flex flex-wrap justify-between">
-  <div className="flex items-center gap-2">
+                      </div>
 
-    
-    <p className="text-sm font-medium">Add to Save</p>
-  </div>
-  <div>
-    <button className="text-sm text-white font-medium bg-[#2c6777] rounded-full px-3  mr-2 py-1">Chat Now</button>
-    <button className="text-sm text-white font-medium bg-[#2c6777] rounded-full py-1 px-3 ">View profile</button>
-  </div>
+                      <div className="text-start font-bold">
+                        <div>
+                          <p > <span className="font-semibold text-[#2c6777] ">Salary Range  :</span> Salary Range  : 10.000$/month --- 4 dayes/week</p>
+                        </div>
+                        <div>
+                          <p > <span className="font-semibold text-[#2c6777]">Desired Tutor Gender:  Male</span> :Male</p>
+                        </div>
+                        <div>
+                          <p > <span className="font-semibold text-[#2c6777]">Subject</span> :Subject :  Math, Physics Medium</p>
+                        </div>
 
-</div>
+                      </div>
 
-</div>
+
+
+
+                      <div className="flex flex-wrap justify-between">
+                        <div className="flex items-center gap-2">
+
+
+                          <p className="text-sm font-medium text-[#2c6777]">Other Requerment: -</p>
+                        </div>
+                        <div>
+                          <button className="text-sm text-white font-medium bg-[#2c6777] rounded-full px-3  mr-2 py-1">See Details</button>
+                          <p className="text-[10px]"><span >posted on:</span> 10 Aug At 4:40 PM</p>
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
 
                 </form>
 
@@ -91,7 +99,19 @@ const TutionJob = () => {
 
                     <div className="p-4 ">
 
-                      
+                    <div className="flex  gap-2 mt-3">
+                      {ButtonData.map((btn) => (
+                        <button
+                          key={btn.id}
+                          type="button"
+                          className="text-black bg-white hover:bg-[#089bab] focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center"
+                         
+                        >
+                          {btn.buttoncontant}
+                          <RxCross2 className="ml-3 h-3.5 w-3.5" />
+                        </button>
+                      ))}
+                    </div>
 
                     </div>
 
@@ -108,8 +128,8 @@ const TutionJob = () => {
         </div>
 
       </section>
-  
-  </>
+
+    </>
   )
 }
 
