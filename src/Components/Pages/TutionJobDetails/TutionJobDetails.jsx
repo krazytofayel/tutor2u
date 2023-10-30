@@ -236,7 +236,7 @@ const TutionJobDetails = () => {
 
 
             </section>
-            {/* Available tution job form end */}
+            {/* Available tution job form end    */}
 
 
             <section className="">
