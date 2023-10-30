@@ -9,7 +9,7 @@ const Navbars = () => {
     let Links = [
 		{ name: 'Home', link: '/' },
 		{ name: 'About Us', link: '/about_us' },
-		{ name: 'Tution job', link: '/flight' },
+		{ name: 'Tution job', link: '/tutor_job' },
 		{ name: 'Contact Us', link: '/contact_us' },
     { name: 'Request a Tutor', link: '/request_tutor' },
 		{ name: 'Find Tutor', link: '/find_tutor' },
@@ -56,7 +56,7 @@ const Navbars = () => {
 				
 
 				<button className="bg-[#C8D8E5] text-[#089bab] px-5 py-1 rounded font-bold truncate">
-					<Link to="/login">Become a tutor</Link>
+					<Link to="/becomea_tutor">Become a tutor</Link>
 				</button>
 
 				<button className="bg-[#089bab] text-white px-5 py-1 rounded font-bold truncate">
