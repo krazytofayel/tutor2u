@@ -23,6 +23,11 @@ const Home = () => {
     }
   }
   window.addEventListener('scroll', setFixed);
+
+  const [loadmore, setLoadMore] = useState(3)
+  function handleLoadMore() {
+    setLoadMore(prevNum => prevNum + 3);
+  }
   return (
     <>
       <div className={`z-10 ${navfix ? 'top-0 h-[4%] w-full fixed bg-[white]' : ''}`} >
@@ -77,10 +82,10 @@ const Home = () => {
       <section className="Home_Secound_Banner ">
         <div className="container px-5 py-10 lg:py-14 md:py-10  mx-auto ">
           <div className=" mx-auto flex flex-wrap px-5 md:flex-row flex-col items-center">
-            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center">
+            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center flex justify-center">
               <img alt="Top-Banner-Side-Image" className=" " src={homebg3} />
             </div>
-            <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pl-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
+            <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full md:pl-10 lg:pl-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
 
               <div className="xl:w-[45rem]">
                 <h1 className="text-black text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
@@ -98,7 +103,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="Home_Third_Banner ">
+      <section className="Home_Third_Banner bg-[#dcecfa]">
         <div className="container px-5 py-10 lg:py-14 md:py-10  mx-auto ">
           <div className=" mx-auto flex flex-wrap px-5 md:flex-row flex-col items-center">
 
@@ -106,15 +111,15 @@ const Home = () => {
 
               <div className="xl:w-[45rem]">
                 <h1 className="text-black text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
-                  Why choice tutor2u?
+                Talented and Qualified Tutors to Serve You for Help
                 </h1>
 
                 <p className="leading-relaxed xl:text-[20px] text-lg text-black mb-4 lg:font-semibold md:font-semibold font-normal">
-                  We have an astounding success in teaching with our skilled and passionate educators who does the work with love and exellence. Your path to excellence starts with the right tutor by your side.
+                Our beloved experts worked so hard to earn their success in their expertise, the love to teach and make every lesson intelligible are what makes them valuable.
                 </p>
               </div>
             </div>
-            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center">
+            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center  flex justify-center">
               <img alt="Top-Banner-Side-Image" className=" " src={homebg3} />
             </div>
 
@@ -138,7 +143,7 @@ const Home = () => {
 
               <h1 className=" text-3xl max-w-3xl mx-auto text-center font-medium mb-10">Time to elevate your learning, Find a tutor in any subject below.</h1>
 
-              <div className="grid grid-cols-1 lg:grid-cols-4 justify-between items-center  gap-5 mb-10 ">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center justify-items-center items-center  gap-5 mb-10 ">
 
                 {
                   Carddata.map((carditem) => (
@@ -165,29 +170,42 @@ const Home = () => {
 
 
 
-      <section className="div3-Section w-full container mx-auto " >
-        <div className=" mt-16 mb-16">
+      <section className="div3-Section w-full bg-[#dcecfa]" >
+        <div className=" mt-20 mb-20  container mx-auto">
 
 
 
 
           <div className=" p-5  ">
 
-            <h1 className=" text-3xl max-w-3xl mx-auto text-center font-medium mb-10">Every Tutor is Professional and Highly Qualified</h1>
+            <h1 className=" text-3xl max-w-xl mx-auto text-center font-medium mb-10">Every Tutor is Professional and Highly Qualified</h1>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 items-center gap-2 p-2 lg:p-0">
+          <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-2 p-2 lg:p-0">
 
 
             {
-              ExploreTutordata.map((exploretutordata)=>(
+              ExploreTutordata.slice(0, loadmore).map((exploretutordata) => (
 
-                <ExploreTutor key={exploretutordata.id}   exploretutordata={exploretutordata}></ExploreTutor>
+                <ExploreTutor key={exploretutordata.id} exploretutordata={exploretutordata}></ExploreTutor>
 
               ))
             }
 
           </div>
+          <div className="text-center lg:mt-10">
+
+            {ExploreTutordata.length > loadmore && (
+              <button
+                onClick={handleLoadMore}
+                className="bg-[#2c6777] hover:bg-blue-700  mb-10 rounded text-white font-bold py-2 px-9 rounded mt-4"
+              >
+                Show More
+              </button>
+            )}
+
+          </div>
+
 
 
 
@@ -196,12 +214,12 @@ const Home = () => {
 
 
       </section>
-      <section>
+      <section className="p-2">
 
         <Slider></Slider>
       </section>
 
-    
+
       <section className="">
         <Footer />
       </section>
