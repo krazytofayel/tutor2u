@@ -27,8 +27,8 @@ const BecomeaTutor = () => {
 
   return (
     <>
-      <div className={`z-10 ${navfix ? 'top-0 h-[4%] w-full fixed bg-[white]' : ''}`} >
-        <Navbars className='relative' />
+      <div className={`z-10 container-xl mx-auto xl:px-56 ${navfix ? ' top-0 h-[6%] w-full fixed bg-white ' : ''}`} >
+        <Navbars className='relative ' />
 
       </div>
 

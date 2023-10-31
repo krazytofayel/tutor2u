@@ -21,10 +21,9 @@ const RequestTutor = () => {
 
   return (
     <>
-      <div>
-        <div className={`z-10 ${navfix ? "top-0 h-[10%] w-full fixed bg-[#523970]" : ""}`}>
-          <Navbars />
-        </div>
+      <div className={`z-10 container-xl mx-auto xl:px-56 ${navfix ? ' top-0 h-[6%] w-full fixed bg-white ' : ''}`} >
+        <Navbars className='relative ' />
+
       </div>
       {/* About top banner start */}
 

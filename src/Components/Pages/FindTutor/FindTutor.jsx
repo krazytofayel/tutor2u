@@ -71,9 +71,10 @@ const FindTutor = () => {
 
   return (
     <div>
-      {/* <div className={`z-10 ${navfix ? 'top-0 h-[4%] w-full fixed bg-[white]' : ''}`} >
-        <Navbars className='relative' />
-      </div> */}
+     <div className={`z-10 container-xl mx-auto xl:px-56 ${navfix ? ' top-0 h-[6%] w-full fixed bg-white ' : ''}`} >
+        <Navbars className='relative ' />
+
+      </div>
 
       <section className="ContactUs_Top_Banner bg-[#2C6777]">
         <div className="container px-5 py-10 lg:py-14 md:py-10  mx-auto ">
