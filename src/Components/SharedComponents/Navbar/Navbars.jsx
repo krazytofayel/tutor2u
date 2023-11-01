@@ -13,6 +13,7 @@ const Navbars = () => {
 		{ name: 'Contact Us', link: '/contact_us' },
     { name: 'Request a Tutor', link: '/request_tutor' },
 		{ name: 'Find Tutor', link: '/find_tutor' },
+		{ name: 'Resource', link: '/tutor_resources' },
 	];
 
 	let [open, setOpen] = useState(false);
