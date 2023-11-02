@@ -13,6 +13,7 @@ import TutionJob from './Components/Pages/TutionJob/TutionJob';
 import Resources from './Components/Pages/Resources/resources';
 import Blog from './Components/Pages/Blog/Blog';
 import TutorProfileDetails from './Components/Pages/TutorProfileDetailsPage/TutorProfileDetails';
+import TutionJobDetails from './Components/Pages/TutionJobDetails/TutionJobDetails';
 
 const App = () => {
   return (
