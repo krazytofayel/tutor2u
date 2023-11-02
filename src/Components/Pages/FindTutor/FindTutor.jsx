@@ -8,6 +8,7 @@ import StarRating from "../../SharedComponents/Helper/StarRating/StarRating";
 
 import A from "../../SharedComponents/Data/FindTutordata/FindTutordata.json"
 import FindTutors from "../Props/FindTutor/FindTutors";
+import TutorProfileDetails from "../TutorProfileDetailsPage/TutorProfileDetails";
 
 const FindTutor = () => {
   const [navfix, setNavfix] = useState(false);
@@ -67,6 +68,12 @@ const FindTutor = () => {
   const [selectedStars2, setSelectedStars2] = useState([]);
   const handleClearFilter = (setSelectedStars) => {
     setSelectedStars([]);
+  };
+
+
+  const [selectedTutorId, setSelectedTutorId] = useState(null);
+  const handleViewProfile = (id) => {
+    setSelectedTutorId(id);
   };
 
   return (
@@ -147,15 +154,21 @@ const FindTutor = () => {
 
 
 
-                  {
-                    A && A.map((findTutorProps) => (
+                  {selectedTutorId ? (
+                    <TutorProfileDetails
+                      tutorId={selectedTutorId}
+                    ></TutorProfileDetails>
+                  ) : (
+                    A &&
+                    A.map((findTutorProps) => (
                       //console.log(findTutorProps.length)
-                      <FindTutors key={findTutorProps.id} findTutorProps={findTutorProps} />
-
+                      <FindTutors
+                        key={findTutorProps.id}
+                        findTutorProps={findTutorProps}
+                        onViewProfile={handleViewProfile}
+                      />
                     ))
-
-
-                  }
+                  )}
 
                 </div>
                 <div className="col-span-12 md:col-span-4 lg:col-span-3 ">
