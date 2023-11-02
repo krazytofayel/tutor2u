@@ -10,7 +10,7 @@ const Navbars = () => {
 		{ name: 'Home', link: '/' },
 		{ name: 'About Us', link: '/about_us' },
 		{ name: 'Tution job', link: '/tutor_job' },
-		{ name: 'Blog Detail', link: '/blog_detail' },
+	
 		{ name: 'Contact Us', link: '/contact_us' },
     { name: 'Request a Tutor', link: '/request_tutor' },
 		{ name: 'Find Tutor', link: '/find_tutor' },

@@ -1,21 +1,23 @@
 import { BsHeart, BsShare } from 'react-icons/bs'
 import { GoCopy } from 'react-icons/go'
+import { Link } from 'react-router-dom'
 
 const BlogPageMainCard = ({ blogmaincardprop }) => {
   const { id, picture, title, description, registered, time, tag } = blogmaincardprop
   return (
     <>
 
-      <div key={id} className="w-full bg-white border border-gray-200 rounded-lg shadow">
-        <a href="#">
+   
+    <div key={id} className="w-full bg-white border border-gray-200 rounded-lg shadow">
+        <Link to={'/blog_detail'}>
           <img className="rounded-t-lg" src={picture} alt="" />
-        </a>
+        </Link>
 
         <div className="p-3">
           <p>{tag}</p>
-          <a href="#">
+          <Link  to={'/blog_detail'}>
             <h5 className="mb-2 text-2xl font-bold tracking-tight truncate text-gray-900 ">{title}</h5>
-          </a>
+          </Link>
           <p className="mb-3 font-normal text-gray-700 line-clamp-3 dark:text-gray-400">{description}</p>
        
           <div className="flex justify-between items-center">
@@ -32,6 +34,7 @@ const BlogPageMainCard = ({ blogmaincardprop }) => {
           </div>
         </div>
       </div>
+
 
     </>
   )
