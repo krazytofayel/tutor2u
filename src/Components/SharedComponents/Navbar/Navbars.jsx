@@ -55,7 +55,9 @@ const Navbars = () => {
 				</li>
 			</ul>
 
-			<div className="hidden md:flex md:items-center ml-2 md:justify-between md:gap-5 ">
+			<div className={`hidden md:flex md:items-center ml-2 md:justify-between md:gap-5 ${
+					open ? 'right-19' : 'hidden'
+				} `}>
 				
 
 				<button className="bg-[#C8D8E5] text-[#089bab] px-5 py-1 rounded font-bold truncate">
