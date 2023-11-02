@@ -14,6 +14,7 @@ const Navbars = () => {
     { name: 'Request a Tutor', link: '/request_tutor' },
 		{ name: 'Find Tutor', link: '/find_tutor' },
 		{ name: 'Resource', link: '/tutor_resources' },
+		{ name: 'Blog', link: '/tutor_blog' },
 	];
 
 	let [open, setOpen] = useState(false);
