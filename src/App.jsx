@@ -1,10 +1,13 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from './Components/Pages/Home/Home';
 import AboutUs from './Components/Pages/AboutUs/AboutUs';
+import BlogDetail from './Components/Pages/BlogDetail/BlogDetail';
 import ContactUs from './Components/Pages/ContactUs/ContactUs';
 import RequestTutor from './Components/Pages/RequestTutor/RequestTutor';
 import FindTutor from './Components/Pages/FindTutor/FindTutor';
 import BecomeaTutor from './Components/Pages/BecomeaTutor/BecomeaTutor';
+import SignIn from './Components/Pages/SignIn/SignIn';
+import SignUp from './Components/Pages/SignUp/SignUp';
 import NotFoundpage from './Components/Pages/NotFoundPage/NotFoundPage';
 import TutionJob from './Components/Pages/TutionJob/TutionJob';
 import TutionJobDetails from './Components/Pages/TutionJobDetails/TutionJobDetails';
@@ -14,10 +17,13 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about_us" element={<AboutUs />} />
+        <Route path="/blog_detail" element={<BlogDetail />} />
         <Route path="/contact_us" element={<ContactUs />} />
         <Route path="/request_tutor" element={<RequestTutor />} />
         <Route path="/find_tutor" element={<FindTutor />} />
         <Route path='/becomea_tutor' element={<BecomeaTutor />} />
+        <Route path='/sign_in' element={<SignIn />} />
+        <Route path='/sign_up'  element={<SignUp />} />
         <Route path='/tutor_job' element={<TutionJob />} />
         {/*  <Route path="/find_tutor" element={<FindTutor/>}/> */}
 

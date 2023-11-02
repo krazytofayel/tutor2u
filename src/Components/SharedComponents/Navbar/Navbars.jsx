@@ -10,6 +10,7 @@ const Navbars = () => {
 		{ name: 'Home', link: '/' },
 		{ name: 'About Us', link: '/about_us' },
 		{ name: 'Tution job', link: '/tutor_job' },
+		{ name: 'Blog Detail', link: '/blog_detail' },
 		{ name: 'Contact Us', link: '/contact_us' },
     { name: 'Request a Tutor', link: '/request_tutor' },
 		{ name: 'Find Tutor', link: '/find_tutor' },
@@ -61,7 +62,7 @@ const Navbars = () => {
 				</button>
 
 				<button className="bg-[#089bab] text-white px-5 py-1 rounded font-bold truncate">
-					<Link to="/signup">Sign in</Link>
+					<Link to="/sign_in">Sign in</Link>
 				</button>
 			</div>
 		</nav>

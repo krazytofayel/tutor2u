@@ -192,10 +192,7 @@ const RequestTutor = () => {
 
                           {...register('detail-address')}
                         />
-                      </div>
-
-                     
-                    
+                      </div>                    
                       <div className="grid md:grid-cols-2 md:gap-6">
 
                         <div className="mb-2">
