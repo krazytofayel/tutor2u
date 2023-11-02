@@ -1,6 +1,8 @@
 import aboutsideimg from "../../../../assets/AboutUs/about-us-side-banner.png";
-import { AiOutlineHeart } from "react-icons/ai";
-import { BiIdCard } from "react-icons/bi";
+import { AiOutlineHeart, AiOutlineHome } from "react-icons/ai";
+import { CiLocationOn } from 'react-icons/ci'
+import { GoCodeReview } from "react-icons/go";
+import { BsCalendar2Date } from 'react-icons/bs'
 import { Link } from "react-router-dom";
 
 const TutorProfile = ({ TutorProfileProps }) => {
@@ -51,9 +53,9 @@ const TutorProfile = ({ TutorProfileProps }) => {
             </div>
           </div> */}
           <div className="grid grid-cols-12 gap-2">
-            <div className="col-span-3 ">
+            <div className="col-span-3  mx-auto">
               {" "}
-              <img className="w-full h-28 rounded" src={aboutsideimg} alt="" />
+              <img className=" h-28  rounded" src={aboutsideimg} alt="" />
             </div>
             <div className="col-span-9">
               <div className="flex justify-between">
@@ -109,11 +111,11 @@ const TutorProfile = ({ TutorProfileProps }) => {
         <div className="mt-2">
           {/* <h5 className="mb-2 text-3xl text-start font-bold text-gray-900 ">Work fast from anywhere</h5> */}
           <p className="mb-2 text-start text-gray-500 text-sm line-clamp-3">
-            {}
+            { }
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap justify-between md:p-2">
           <div className="flex items-center gap-2">
             <AiOutlineHeart />
             <p className="text-sm font-medium">Add to Save</p>
@@ -130,6 +132,56 @@ const TutorProfile = ({ TutorProfileProps }) => {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="w-full  p-4 mt-5 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8">
+        <div className="flex flex-wrap border-b-2  ">
+          <div className="flex items-center gap-2 border-[#373A3F] border-r-2 mb-2 "><AiOutlineHome /> <p className="mr-2">AiOutlineHome</p></div>
+          <div className="flex items-center gap-2  ml-2 mb-2"><GoCodeReview /> <p className="mr-2">AiOutlineHome</p></div>
+
+        </div>
+        <div className="font-normal text-sm text-start border-b-2">
+          <h1 className="text-start text-[#373A3F] font-bold text-2xl">A Short Brief</h1>
+          <p className="mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, printer took a galley of type  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and Lorem </p>
+        </div>
+        <div className="border-b-2">
+          <h1 className="text-start text-[#373A3F] font-bold text-2xl">Education</h1>
+          <p className="text-start text-[#373A3F] font-semibold">MBBS, MD, DM rheumatology</p>
+          <div className="max-w-md flex justify-between text-sm truncate">
+            <div className="flex items-center gap-2  mb-2 "><AiOutlineHome /> <p className="mr-2">Univarsity of Florida</p></div>
+            <div className="flex items-center gap-2 mb-2 "><CiLocationOn /> <p className="mr-2">Florida FA</p></div>
+            <div className="flex items-center gap-2 mb-2 "><BsCalendar2Date /> <p className="mr-2">25 jun 2023</p></div>
+
+          </div>
+          <p className="text-start mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </p>
+        </div>
+
+        <div className="border-b-2">
+          <h1 className="text-start text-[#373A3F] font-bold md:text-2xl truncate">MBBS, MS, Mch neurosergery</h1>
+
+          <div className=" flex justify-between max-w-xs text-sm">
+            <div className="flex items-center gap-2  mb-2 "><AiOutlineHome /> <p className="mr-2">Univarsity of Florida</p></div>
+            <div className="flex items-center gap-2 mb-2 "><CiLocationOn /> <p className="mr-2">Florida FA</p></div>
+
+
+          </div>
+
+        </div>
+
+        <div className="border-b-2">
+          <h1 className="text-start text-[#373A3F] font-bold md:text-2xl">MBBS, MS, Mch neurosergery</h1>
+
+          <div className=" flex justify-between max-w-xs text-sm">
+            <div className="flex items-center gap-2  mb-2 "><AiOutlineHome /> <p className="mr-2">Univarsity of Florida</p></div>
+            <div className="flex items-center gap-2 mb-2 "><CiLocationOn /> <p className="mr-2">Florida FA</p></div>
+
+
+          </div>
+
+        </div>
+
+
+
+
       </div>
     </>
   );
