@@ -25,11 +25,10 @@ const TutionJobDetails = () => {
 
     return (
         <>
-            <div>
-                <div className={`z-10 ${navfix ? "top-0 h-[10%] w-full fixed bg-[#523970]" : ""}`}>
-                    <Navbars />
-                </div>
-            </div>
+          <div className={`z-10  ${navfix ? ' top-0 h-[6%] w-full fixed bg-white ' : ''}`} >
+        <Navbars className='relative ' />
+
+      </div>
             {/* Tutor details top banner start */}
 
 
@@ -72,7 +71,7 @@ const TutionJobDetails = () => {
                                                 <div className="mb-2">
 
                                                     <label className="block mb-2 text-sm font-medium text-gray-900 ">Select Medium:</label>
-                                                    <select id="select-an-medium" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
+                                                    <select id="select-an-medium" className="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
                                                         <option selected>Select Medium</option>
                                                         <option value="US">United States</option>
                                                         <option value="CA">Canada</option>
@@ -89,7 +88,7 @@ const TutionJobDetails = () => {
                                                 <div className="mb-2">
 
                                                     <label className="block mb-2 text-sm font-medium text-gray-900 ">Select Class:</label>
-                                                    <select id="countries" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
+                                                    <select id="countries" className="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
                                                         <option selected>Select Class</option>
                                                         <option value="US">United States</option>
                                                         <option value="CA">Canada</option>
@@ -101,7 +100,7 @@ const TutionJobDetails = () => {
 
                                                 <div className="mb-2">
                                                     <label className="block mb-2 text-sm font-medium text-gray-900 ">Select Subject:</label>
-                                                    <select id="countries" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
+                                                    <select id="countries" className="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
                                                         <option selected>All Subject</option>
                                                         <option value="US">United States</option>
                                                         <option value="CA">Canada</option>
@@ -125,7 +124,7 @@ const TutionJobDetails = () => {
                                                 <div className="mb-2">
 
                                                     <label className="block mb-2 text-sm font-medium text-gray-900 ">Days per Week:</label>
-                                                    <select id="countries" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
+                                                    <select id="countries" className="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
                                                         <option selected>3 days/week</option>
                                                         <option value="US">United States</option>
                                                         <option value="CA">Canada</option>
@@ -137,7 +136,7 @@ const TutionJobDetails = () => {
                                                 <div className="mb-2">
 
                                                     <label className="block mb-2 text-sm font-medium text-gray-900 ">Gender of Student:</label>
-                                                    <select id="countries" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
+                                                    <select id="countries" className="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
                                                         <option selected>Any gender</option>
                                                         <option value="US">United States</option>
                                                         <option value="CA">Canada</option>
@@ -178,7 +177,7 @@ const TutionJobDetails = () => {
                                                 <div className="mb-2">
 
                                                     <label className="block mb-2 text-sm font-medium text-gray-900 ">Desired Tutor Gender:</label>
-                                                    <select id="countries" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
+                                                    <select id="countries" className="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
                                                         <option selected>Any gender</option>
                                                         <option value="US">United States</option>
                                                         <option value="CA">Canada</option>
@@ -240,9 +239,9 @@ const TutionJobDetails = () => {
 
 
             <section className="">
-                <div class="container px-5 py-24 mx-auto">
-                    <div className="bg-[#2C6777] py-14 rounded-3xl ">
-                        <div className="lg:w-full flex flex-col sm:flex-row text-center lg:text-start md:text-start mx-auto lg:px-10 px-4 ">
+                <div className="container px-5 py-24 mx-auto">
+                    <div className="bg-[#2C6777] py-10 rounded-3xl ">
+                        <div className="lg:w-full flex items-center flex-col sm:flex-row text-center lg:text-start md:text-start mx-auto lg:px-10 px-4 ">
                             <div className="lg:w-3/4 md:3/5">
                                 <h1 className="flex-grow sm:pr-16 text-2xl font-medium title-font text-white ">Create Tutor2u account now</h1>
                                 <p className="flex-grow sm:pr-16 text-xl font-medium title-font text-white">Join us and start your journey towards excellence.</p>
