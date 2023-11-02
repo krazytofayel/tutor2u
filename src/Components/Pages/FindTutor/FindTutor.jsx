@@ -8,6 +8,7 @@ import StarRating from "../../SharedComponents/Helper/StarRating/StarRating";
 
 import A from "../../SharedComponents/Data/FindTutordata/FindTutordata.json"
 import FindTutors from "../Props/FindTutor/FindTutors";
+import TutorProfileDetails from "../TutorProfileDetailsPage/TutorProfileDetails";
 
 const FindTutor = () => {
   const [navfix, setNavfix] = useState(false);
@@ -69,11 +70,18 @@ const FindTutor = () => {
     setSelectedStars([]);
   };
 
+
+  const [selectedTutorId, setSelectedTutorId] = useState(null);
+  const handleViewProfile = (id) => {
+    setSelectedTutorId(id);
+  };
+
   return (
     <div>
-      {/* <div className={`z-10 ${navfix ? 'top-0 h-[4%] w-full fixed bg-[white]' : ''}`} >
-        <Navbars className='relative' />
-      </div> */}
+     <div className={`z-10 container-xl mx-auto xl:px-56 ${navfix ? ' top-0 h-[6%] w-full fixed bg-white ' : ''}`} >
+        <Navbars className='relative ' />
+
+      </div>
 
       <section className="ContactUs_Top_Banner bg-[#2C6777]">
         <div className="container px-5 py-10 lg:py-14 md:py-10  mx-auto ">
@@ -146,15 +154,21 @@ const FindTutor = () => {
 
 
 
-                  {
-                    A && A.map((findTutorProps) => (
+                  {selectedTutorId ? (
+                    <TutorProfileDetails
+                      tutorId={selectedTutorId}
+                    ></TutorProfileDetails>
+                  ) : (
+                    A &&
+                    A.map((findTutorProps) => (
                       //console.log(findTutorProps.length)
-                      <FindTutors key={findTutorProps.id} findTutorProps={findTutorProps} />
-
+                      <FindTutors
+                        key={findTutorProps.id}
+                        findTutorProps={findTutorProps}
+                        onViewProfile={handleViewProfile}
+                      />
                     ))
-
-
-                  }
+                  )}
 
                 </div>
                 <div className="col-span-12 md:col-span-4 lg:col-span-3 ">

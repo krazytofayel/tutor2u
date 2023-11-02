@@ -14,7 +14,8 @@ const Navbars = () => {
 		{ name: 'Contact Us', link: '/contact_us' },
     { name: 'Request a Tutor', link: '/request_tutor' },
 		{ name: 'Find Tutor', link: '/find_tutor' },
-		{name:'jobdetails', link:'/tutor_job_details'}
+		{ name: 'Resource', link: '/tutor_resources' },
+		{ name: 'Blog', link: '/tutor_blog' },
 	];
 
 	let [open, setOpen] = useState(false);
@@ -23,7 +24,7 @@ const Navbars = () => {
   <>
   
   <div>
-  <nav className="md:flex items-baseline justify-between text-black py-2  bg-white container mx-auto">
+  <nav className="md:flex items-baseline justify-between text-black py-2   ">
 			<div className="font-bold text-3xl">
 				<a href="/">Tutor2U</a>
 			</div>
@@ -33,7 +34,7 @@ const Navbars = () => {
 			</div>
 
 			<ul
-				className={`md:flex md:items-center  md:bg-inherit   md:pb-0 pb-12 absolute md:static text-[#089bab]  md:z-auto z-[1] right-0 w-full h-screen md:h-full md:w-auto mt-4 md:pl-0 pl-5 transition-all duration-500 ease-in-out ${
+				className={`md:flex md:items-center  md:bg-inherit   md:pb-0 pb-12 absolute md:static text-[#089bab] bg-white md:z-auto z-[1] right-0 w-full h-screen md:h-full md:w-auto mt-2 md:pl-0 pl-5 transition-all duration-500 ease-in-out ${
 					open ? 'right-19' : 'hidden'
 				}`}
 			>

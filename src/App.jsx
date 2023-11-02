@@ -10,7 +10,10 @@ import SignIn from './Components/Pages/SignIn/SignIn';
 import SignUp from './Components/Pages/SignUp/SignUp';
 import NotFoundpage from './Components/Pages/NotFoundPage/NotFoundPage';
 import TutionJob from './Components/Pages/TutionJob/TutionJob';
-import TutionJobDetails from './Components/Pages/TutionJobDetails/TutionJobDetails';
+import Resources from './Components/Pages/Resources/resources';
+import Blog from './Components/Pages/Blog/Blog';
+import TutorProfileDetails from './Components/Pages/TutorProfileDetailsPage/TutorProfileDetails';
+
 const App = () => {
   return (
     <>
@@ -21,10 +24,13 @@ const App = () => {
         <Route path="/contact_us" element={<ContactUs />} />
         <Route path="/request_tutor" element={<RequestTutor />} />
         <Route path="/find_tutor" element={<FindTutor />} />
+        <Route path="/tutor_details/:tutorId" element={<TutorProfileDetails />} />
         <Route path='/becomea_tutor' element={<BecomeaTutor />} />
         <Route path='/sign_in' element={<SignIn />} />
         <Route path='/sign_up'  element={<SignUp />} />
         <Route path='/tutor_job' element={<TutionJob />} />
+        <Route path='/tutor_resources' element={<Resources />} />
+        <Route path='/tutor_blog' element={<Blog />} />
         {/*  <Route path="/find_tutor" element={<FindTutor/>}/> */}
 
 
