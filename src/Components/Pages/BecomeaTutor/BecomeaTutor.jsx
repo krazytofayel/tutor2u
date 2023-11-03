@@ -27,28 +27,32 @@ const BecomeaTutor = () => {
 
   return (
     <>
-      <div className={`z-10 container-xl mx-auto xl:px-56 ${navfix ? ' top-0 h-[6%] w-full fixed bg-white ' : ''}`} >
+      <div className={`z-10  ${navfix ? ' top-0 h-[12%] w-full fixed bg-white ' : ''}`} >
         <Navbars className='relative ' />
 
       </div>
 
 
+  
       <section className="ContactUs_Top_Banner bg-[#2C6777]">
-        <div className="container px-5 py-10 lg:py-14 md:py-10  mx-auto ">
-          <div className=" mx-auto flex flex-wrap px-5 md:flex-row flex-col items-center">
+        <div className="container mx-auto py-20 ">
+          <div className=" mx-auto flex flex-wrap  md:flex-row flex-col items-center">
             <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
               <div className="xl:w-[45rem]">
-                <h1 className="text-white text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
-                  Become A Educator
+                <h1 className="text-white text-center md:text-start text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
+                  Animated Night Hill Illustrations
                 </h1>
 
-                <p className="leading-relaxed xl:text-[20px] text-lg text-white mb-4 lg:font-semibold md:font-semibold font-normal">
-                  Join us in shaping the future of our students, and embark on a rewarding journey as an integral member of our tutoring program. Your passion for teaching will find a meaningful home here.
+                <p className="leading-relaxed text-center md:text-start xl:text-[20px] text-lg text-white mb-4 lg:font-semibold md:font-semibold font-normal">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                  unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  It has
                 </p>
               </div>
             </div>
 
-            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center">
+            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center flex justify-center md:justify-end">
               <img alt="Top-Banner-Side-Image" className=" " src={aboutsideimg} />
             </div>
           </div>
