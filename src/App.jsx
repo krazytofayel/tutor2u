@@ -10,7 +10,7 @@ import SignIn from './Components/Pages/SignIn/SignIn';
 import SignUp from './Components/Pages/SignUp/SignUp';
 import NotFoundpage from './Components/Pages/NotFoundPage/NotFoundPage';
 import TutionJob from './Components/Pages/TutionJob/TutionJob';
-import Resources from './Components/Pages/Resources/resources';
+import Resources from './Components/Pages/Resources/Resources';
 import Blog from './Components/Pages/Blog/Blog';
 import TutorProfileDetails from './Components/Pages/TutorProfileDetailsPage/TutorProfileDetails';
 import TutionJobDetails from './Components/Pages/TutionJobDetails/TutionJobDetails';
