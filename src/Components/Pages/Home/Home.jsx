@@ -39,11 +39,11 @@ const Home = () => {
 
 
       <section className="Home_Top_Banner bg-[#2C6777]">
-        <div className="container mx-auto px-5 py-10 lg:py-14 md:py-10 xl:py-24  ">
-          <div className=" mx-auto flex flex-wrap px-5 md:flex-row flex-col items-center">
+        <div className="container mx-auto  py-10 lg:py-14 md:py-10 xl:py-24  ">
+          <div className="mx-auto flex flex-wrap  md:flex-row flex-col items-center">
             <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
-              <div className="xl:w-[50rem]">
-                <h1 className="text-white text-[24px] xl:text-[45px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
+              <div className="xl:w-[45rem]">
+                <h1 className="text-white text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
                   We help you find  and manage tutors.
                 </h1>
 
@@ -69,7 +69,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center">
+            <div className="  xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center flex justify-center md:justify-end">
               <img alt="Top-Banner-Side-Image" className=" " src={homebg} />
             </div>
           </div>
@@ -80,9 +80,9 @@ const Home = () => {
 
 
       <section className="Home_Secound_Banner ">
-        <div className="container  mx-auto px-5 py-10 lg:py-28 md:py-20  ">
-          <div className=" mx-auto flex flex-wrap  px-5 md:flex-row flex-col items-center">
-            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full  lg:h-auto h-auto object-cover object-center flex justify-center">
+        <div className="container  mx-auto  py-10 lg:py-28 md:py-20  ">
+          <div className=" mx-auto flex flex-wrap   md:flex-row flex-col items-center">
+            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full  lg:h-auto h-auto object-cover object-center flex justify-center md:justify-start">
               <img alt="Top-Banner-Side-Image" className=" " src={homebg3} />
             </div>
             <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full md:pl-10 lg:pl-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
@@ -104,8 +104,8 @@ const Home = () => {
       </section>
 
       <section className="Home_Third_Banner bg-[#dcecfa]">
-        <div className="container px-5 py-10 lg:py-28 md:py-14  mx-auto ">
-          <div className=" mx-auto flex flex-wrap px-5 md:flex-row flex-col items-center">
+        <div className="container  py-10 lg:py-28 md:py-14  mx-auto ">
+          <div className=" mx-auto flex flex-wrap  md:flex-row flex-col items-center">
 
             <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
 
@@ -119,7 +119,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center  flex justify-center">
+            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center  flex justify-center md:justify-end">
               <img alt="Top-Banner-Side-Image" className=" " src={homebg3} />
             </div>
 
@@ -139,11 +139,11 @@ const Home = () => {
           <div>
 
 
-            <div className=" p-5  ">
+            <div className=" p-5 md:p-0  ">
 
               <h1 className=" text-[24px] max-w-3xl text-gray-800 xl:text-[40px] lg:text-[36px] md:text-[27px] mx-auto text-center  font-[650] mb-10">Time to elevate your learning, Find a tutor in any subject below.</h1>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center justify-items-center items-center  gap-5 mb-10 ">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center justify-items-center items-center   gap-5 mb-10 ">
 
                 {
                   Carddata.map((carditem) => (
@@ -176,12 +176,12 @@ const Home = () => {
 
 
 
-          <div className=" p-5  ">
+          <div className=" p-5 md:p-0 ">
 
             <h1 className="text-[24px] text-gray-800 xl:text-[40px] lg:text-[36px] md:text-[27px] text-center  font-[650] max-w-xl mx-auto   mt-10 mb-10">Every Tutor is Professional and Highly Qualified</h1>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center justify-items-center items-center gap-5 p-2   ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center justify-items-center items-center  gap-5 p-2   ">
 
 
             {
