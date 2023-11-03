@@ -18,10 +18,10 @@ const AboutUs = () => {
     window.addEventListener("scroll", setFixed);
     return (
         <>
-             <div className={`z-10 container-xl mx-auto xl:px-56 ${navfix ? ' top-0 h-[6%] w-full fixed bg-white ' : ''}`} >
-        <Navbars className='relative ' />
+            <div className={`z-10 container-xl mx-auto xl:px-56 ${navfix ? ' top-0 h-[10%] w-full fixed bg-white ' : ''}`} >
+                <Navbars className='relative ' />
 
-      </div>
+            </div>
             {/* About top banner start */}
 
             <section className="AboutUs_Top_Banner bg-[#2C6777]">
@@ -61,7 +61,7 @@ const AboutUs = () => {
                         </div>
                         <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5 ">
                             <div className="xl:w-[48rem] xl:ml-10  md:ml-5">
-                                <h1 className="text-black text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
+                                <h1 className="text-gray-800 text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
                                     The Problem Revealed
                                 </h1>
 
@@ -80,11 +80,11 @@ const AboutUs = () => {
 
             {/* Our Solution section start */}
             <section className="AboutUs_Top_Banner bg-[#DCECFA]">
-                <div className="container px-5 py-10 lg:py-14 md:py-10  mx-auto mb-12">
+                <div className="container px-5 py-10 lg:py-20 md:py-10  mx-auto mb-12">
                     <div className=" mx-auto flex flex-wrap px-5 md:flex-row flex-col items-center">
                         <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
                             <div className="xl:w-[45rem]">
-                                <h1 className="text-black text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
+                                <h1 className="text-gray-800 text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
                                     Our Solution
                                 </h1>
 
@@ -110,7 +110,7 @@ const AboutUs = () => {
                 <div className="container px-5 py-10 lg:py-14 md:py-10  mx-auto mb-12 ">
                     <div className=" mx-auto flex px-5 items-center justify-center flex-col mb-6">
                         <div className="text-center lg:w-2/3 w-full">
-                            <h1 className="title-font text-black text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4">
+                            <h1 className="title-font text-gray-800 text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4">
                                 How It’s Work
                             </h1>
                             <p className=" xl:w-2/5 lg:w-3/4 mx-auto text-gray-500s font-medium mb-10 ">
@@ -128,7 +128,7 @@ const AboutUs = () => {
                     {/* 3 card section start */}
                     <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
                         <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-                            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#2C6777] mb-5 flex-shrink-0">
+                            <div className="h-10 w-10 md:w-20 md:h-20 inline-flex items-center justify-center rounded-full bg-[#2C6777] mb-5 flex-shrink-0">
                                 <p className="text-3xl font-medium text-white">1</p>
                             </div>
                             <div className="flex-grow">
@@ -139,7 +139,7 @@ const AboutUs = () => {
                             </div>
                         </div>
                         <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-                            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#2C6777] mb-5 flex-shrink-0">
+                            <div className="h-10 w-10 md:w-20 md:h-20  inline-flex items-center justify-center rounded-full bg-[#2C6777] mb-5 flex-shrink-0">
                                 <p className="text-3xl font-medium text-white">2</p>
                             </div>
                             <div className="flex-grow">
@@ -150,7 +150,7 @@ const AboutUs = () => {
                             </div>
                         </div>
                         <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-                            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#2C6777] mb-5 flex-shrink-0">
+                            <div className="h-10 w-10 md:w-20 md:h-20  inline-flex items-center justify-center rounded-full bg-[#2C6777] mb-5 flex-shrink-0">
                                 <p className="text-3xl font-medium text-white">3</p>
                             </div>
                             <div className="flex-grow">
@@ -204,13 +204,13 @@ const AboutUs = () => {
 
             {/* Faq section start */}
             <section className="FAQ-section ">
-                <div className="bg-[#F0F8FF] lg:p-16">
+                <div className=" lg:p-16">
 
 
                     <div className="container mx-auto">
 
 
-                        <h1 className="title-font text-black text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 text-center">
+                        <h1 className="title-font text-gray-800 text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 text-center">
                             Frequently Asked Questions
                         </h1>
                         <div className="grid grid-cols-12 gap-4  p-2">
@@ -354,7 +354,7 @@ const AboutUs = () => {
                                                 className=" bg-[#1570FA] text-white no-underline hover:bg-[#4e84d4] mt-4  px-9 py-2 rounded-3xl    text-[16px] font-[500]"
                                             >Ask Question</a>
 
-                                            
+
                                         </div>
                                     </div>
 
