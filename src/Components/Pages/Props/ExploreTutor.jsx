@@ -8,7 +8,7 @@ const ExploreTutor = ({ exploretutordata }) => {
 
       <div>
 
-        <div key={id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-white dark:border-gray-700 ">
+        <div key={id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-white dark:border-gray-700 mb-10">
           <a href="#">
             <img className="rounded-t-lg" src={picture} alt="404" />
           </a>
