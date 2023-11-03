@@ -67,7 +67,7 @@ const TutorProfileDetails = ({ tutorId }) => {
     <div>
       <div
         className={`z-10 ${
-          navfix ? "top-0 h-[4%] w-full fixed bg-[white]" : ""
+          navfix ? "top-0 h-[12%] w-full fixed bg-[white]" : ""
         }`}
       >
         <Navbars className="relative" />
@@ -149,24 +149,28 @@ const TutorProfileDetails = ({ tutorId }) => {
               </div>
             </div>
 
-            <div>
-              <div className="flex justify-between items-center bg-[#2c6777] rounded-md p-5 mt-5 mb-5">
-                <div className="text-white">
-                  <h2 className="text-2xl font-semibold">
-                    Request the best tutor for your child
-                  </h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.{" "}
-                  </p>
+           
+            <section className="">
+                <div className="container px-5 py-24 mx-auto">
+                    <div className="bg-[#2C6777] py-10 rounded-3xl ">
+                        <div className="lg:w-full flex items-center flex-col sm:flex-row text-center lg:text-start md:text-start mx-auto lg:px-10 px-4 ">
+                            <div className="lg:w-3/4 md:3/5">
+                                <h1 className="flex-grow sm:pr-16 text-2xl font-medium title-font text-white ">Create Tutor2u account now</h1>
+                                <p className="flex-grow sm:pr-16 text-xl font-medium title-font text-white">Join us and start your journey towards excellence.</p>
+                            </div>
+                            <div className="lg:w-1/4 md:2/5">
+                                <button className="flex-shrink-0 text-[#21515e] font-semibold bg-white border-0 py-2 lg:px-8 md:px-5 px-8  hover:bg-[#5cdcff]  rounded-3xl text-lg mt-10 sm:mt-0">Request a Tutor</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+
                 </div>
-                <div>
-                  <button className="bg-white text-black text-sm font-normal px-3 py-2 rounded-full">
-                    Request a Tutor
-                  </button>
-                </div>
-              </div>
-            </div>
+
+            </section>
           </div>
         </div>
       </section>
