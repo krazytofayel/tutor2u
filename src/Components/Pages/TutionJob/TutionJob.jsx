@@ -1,8 +1,6 @@
-
 import { useState } from 'react';
 import { RxCross2 } from 'react-icons/rx';
 import Navbars from '../../SharedComponents/Navbar/Navbars';
-import { Link } from 'react-router-dom';
 const TutionJob = () => {
   const [navfix, setNavfix] = useState(false);
 
@@ -21,7 +19,7 @@ const TutionJob = () => {
   ];
   return (
     <>
-       <div className={`z-10 container-xl mx-auto xl:px-56 ${navfix ? ' top-0 h-[6%] w-full fixed bg-white ' : ''}`} >
+       <div className={`z-10  ${navfix ? ' top-0 h-[6%] w-full fixed bg-white ' : ''}`} >
         <Navbars className='relative ' />
 
       </div>
@@ -32,8 +30,8 @@ const TutionJob = () => {
           <div className="container mx-auto">
 
 
-            <h3 className="text-2xl font-bold mb-2">Get in Touch</h3>
-            <div className="grid grid-cols-12 gap-4  p-2">
+            <h3 className="text-2xl text-gray-800 md:text-3xl font-bold mb-2 mx-3">Get in Touch</h3>
+            <div className="grid grid-cols-12 gap-5 lg:gap-12  p-2">
 
               <div className="col-span-12 lg:col-span-9 mb-6 lg:mb-0">
 
@@ -89,8 +87,8 @@ const TutionJob = () => {
                           <p className="text-sm font-medium text-[#2c6777]">Other Requerment: -</p>
                         </div>
                         <div>
-                          <Link to={'/tutor_job_details'} className="text-sm text-white font-medium bg-[#2c6777] rounded-full px-3  mr-2 py-1">See Details</Link>
-                          <p className="text-[10px]"><span >posted on:</span> 10 Aug At 4:40 PM</p>
+                          <button className="text-sm text-white font-medium bg-[#2c6777] rounded-full px-3  mr-2 py-1">See Details</button>
+                          <p className="text-[10px] mt-2"><span >posted on:</span> 10 Aug At 4:40 PM</p>
 
                         </div>
 
