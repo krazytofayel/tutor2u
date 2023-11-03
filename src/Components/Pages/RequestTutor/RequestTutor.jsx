@@ -21,7 +21,7 @@ const RequestTutor = () => {
 
   return (
     <>
-      <div className={`z-10 container-xl mx-auto xl:px-56 ${navfix ? ' top-0 h-[6%] w-full fixed bg-white ' : ''}`} >
+      <div className={`z-10  ${navfix ? ' top-0 h-[12%] w-full fixed bg-white ' : ''}`} >
         <Navbars className='relative ' />
 
       </div>
@@ -50,7 +50,7 @@ const RequestTutor = () => {
 
 
       <section className="Contact_Us_Middle ">
-        <div className="bg-[#DCECFA] lg:p-16">
+        <div className="bg-[#DCECFA] p-2 md:p-10 lg:p-16">
 
 
 
@@ -58,7 +58,7 @@ const RequestTutor = () => {
 
 
             {/* <h3 className="text-lg font-normal md:mx-6 mx-4 mb-2  lg:text-start text-center">If you need a tutor, fill out the form below. We will contact you.</h3> */}
-            <div className="grid grid-cols-12 gap-4 p-2">
+            <div className="grid grid-cols-12 gap-5 lg:gap-12 p-2">
 
               <div className="col-span-12 lg:col-span-9 mb-6 lg:mb-0">
 
@@ -77,7 +77,7 @@ const RequestTutor = () => {
                         <div className="mb-2">
 
                           <label className="block mb-2 text-sm font-medium text-gray-900 ">Select Medium:</label>
-                          <select id="select-an-medium" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
+                          <select id="select-an-medium" className="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
                             <option selected>Select Medium</option>
                             <option value="US">United States</option>
                             <option value="CA">Canada</option>
@@ -94,7 +94,7 @@ const RequestTutor = () => {
                         <div className="mb-2">
 
                           <label className="block mb-2 text-sm font-medium text-gray-900 ">Select Class:</label>
-                          <select id="countries" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
+                          <select id="countries" className="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
                             <option selected>Select Class</option>
                             <option value="US">United States</option>
                             <option value="CA">Canada</option>
@@ -106,7 +106,7 @@ const RequestTutor = () => {
 
                         <div className="mb-2">
                           <label className="block mb-2 text-sm font-medium text-gray-900 ">Select Subject:</label>
-                          <select id="countries" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
+                          <select id="countries" className="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
                             <option selected>All Subject</option>
                             <option value="US">United States</option>
                             <option value="CA">Canada</option>
@@ -130,7 +130,7 @@ const RequestTutor = () => {
                         <div className="mb-2">
 
                           <label className="block mb-2 text-sm font-medium text-gray-900 ">Days per Week:</label>
-                          <select id="countries" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
+                          <select id="countries" className="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
                             <option selected>3 days/week</option>
                             <option value="US">United States</option>
                             <option value="CA">Canada</option>
@@ -142,7 +142,7 @@ const RequestTutor = () => {
                         <div className="mb-2">
 
                           <label className="block mb-2 text-sm font-medium text-gray-900 ">Gender of Student:</label>
-                          <select id="countries" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
+                          <select id="countries" className="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
                             <option selected>Any gender</option>
                             <option value="US">United States</option>
                             <option value="CA">Canada</option>
@@ -161,7 +161,7 @@ const RequestTutor = () => {
                         <div className="mb-2">
 
                           <label className="block mb-2 text-sm font-medium text-gray-900 ">Salary Range:</label>
-                          <select id="countries" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
+                          <select id="countries" className="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
                             <option selected>Salary Range</option>
                             <option value="US">United States</option>
                             <option value="CA">Canada</option>
@@ -173,7 +173,7 @@ const RequestTutor = () => {
                         <div className="mb-2">
 
                         <label className="block mb-2 text-sm font-medium text-gray-900 ">Desired Tutor Gender:</label>
-                        <select id="countries" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
+                        <select id="countries" className="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg  p-2.5 ">
                           <option selected>Any gender</option>
                           <option value="US">United States</option>
                           <option value="CA">Canada</option>
@@ -261,11 +261,11 @@ const RequestTutor = () => {
 
 
                   <div className="mb-2 p-4">
-                    <h3 className="font-bold text-sm">Q. If i cant get the desired tutor ?</h3>
+                    <h3 className="font-bold text-gray-800 text-sm">Q. If i cant get the desired tutor ?</h3>
                     <p className="text-sm">Just fill up the Request for a tutor form and submit request. We will try to give you the tutor according to your choice.</p>
                   </div>
                   <div className="p-4">
-                    <h3 className="font-bold text-sm">Q. If i cant get the desired tutor ?</h3>
+                    <h3 className="font-bold text-gray-800 text-sm">Q. If i cant get the desired tutor ?</h3>
                     <p className="text-sm">Just fill up the Request for a tutor form and submit request. We will try to give you the tutor according to your choice.</p>
                   </div>
 
