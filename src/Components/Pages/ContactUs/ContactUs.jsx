@@ -26,22 +26,22 @@ const ContactUs = () => {
 
   return (
     <>
-       <div className={`z-10 container-xl mx-auto xl:px-56 ${navfix ? ' top-0 h-[6%] w-full fixed bg-white ' : ''}`} >
+       <div className={`z-10  ${navfix ? ' top-0 h-[12%] w-full fixed bg-white ' : ''}`} >
         <Navbars className='relative ' />
 
       </div>
 
 
       <section className="ContactUs_Top_Banner bg-[#2C6777]">
-        <div className="container px-5 py-10 lg:py-14 md:py-10  mx-auto ">
-          <div className=" mx-auto flex flex-wrap px-5 md:flex-row flex-col items-center">
+        <div className="container mx-auto py-20 ">
+          <div className=" mx-auto flex flex-wrap  md:flex-row flex-col items-center">
             <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
               <div className="xl:w-[45rem]">
-                <h1 className="text-white text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
+                <h1 className="text-white text-center md:text-start text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
                   Animated Night Hill Illustrations
                 </h1>
 
-                <p className="leading-relaxed xl:text-[20px] text-lg text-white mb-4 lg:font-semibold md:font-semibold font-normal">
+                <p className="leading-relaxed text-center md:text-start xl:text-[20px] text-lg text-white mb-4 lg:font-semibold md:font-semibold font-normal">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                   Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                   unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -50,7 +50,7 @@ const ContactUs = () => {
               </div>
             </div>
 
-            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center">
+            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center flex justify-center md:justify-end">
               <img alt="Top-Banner-Side-Image" className=" " src={aboutsideimg} />
             </div>
           </div>
@@ -64,7 +64,7 @@ const ContactUs = () => {
           <div className="container mx-auto">
 
 
-            <h3 className="text-2xl font-bold mb-2">Get in Touch</h3>
+            <h3 className="text-2xl lg:text-3xl text-gray-800 font-bold mb-2 mx-3">Get in Touch</h3>
             <div className="grid grid-cols-12 gap-4  p-2">
 
               <div className="col-span-12 lg:col-span-9 mb-6 lg:mb-0">
@@ -142,33 +142,33 @@ const ContactUs = () => {
               <div className="col-span-12 lg:col-span-3 ">
 
                 <div>
-                  <div className=" w-auto  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                  <div className=" w-auto  bg-white border border-gray-200 rounded-lg shadow  ">
 
-                    <h5 className="mb-3 p-2 text-base font-semibold bg-[#2c6777] text-white text-center  rounded-t-lg  border-b-2 w-full md:text-xl dark:text-white">
+                    <h5 className="mb-3 p-2 text-base font-semibold bg-[#2c6777] text-white text-center  rounded-t-lg  border-b-2 w-full md:text-xl ">
                       Do You Have Any Questions?
                     </h5>
 
 
                     <div className="p-4 ">
 
-                      <p className="text-sm font-normal text-black dark:text-gray-400">Contact us via email or give us a call to enquire about our tutoring services, we’ll do our best to meet your needs.</p>
+                      <p className="text-sm font-normal text-gray-800 ">Contact us via email or give us a call to enquire about our tutoring services, we’ll do our best to meet your needs.</p>
                       <ul className="my-4 space-y-3">
 
                         <li>
-                          <a href="#" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                          <a href="#" className="flex items-center p-3 text-base font-bold text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow ">
                             <HiPhoneMissedCall fontSize={30} />
                             <span className="flex-1 ml-3 whitespace-wrap">+111 222 333 444</span>
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                          <a href="#" className="flex items-center p-3 text-base font-bold text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow ">
                             <HiLocationMarker fontSize={30} />
                             <span className="flex-1 ml-3 whitespace-wrap">Suite no - 25, 4th Floor, Bhuiyan Mansion, 6 Motijheel C/A,
                               Dhaka - 1000 , Bangladesh</span>
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                          <a href="#" className="flex items-center p-3 text-base font-bold text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
                             <HiMail fontSize={30} />
                             <span className="flex-1 ml-3  whitespace-wrap">www.your@email.com</span>
                           </a>
