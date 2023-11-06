@@ -98,31 +98,31 @@ const BecomeaTutor = () => {
                     <div className="form_Contant bg-white rounded-xl p-4">
                       <div className="grid grid-rows-2 gap-2 grid-flow-col">
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name:</label>
-                          <input type="text" id="First_Name" className="bg-gray-50 border border-gray-300 caret-green-500  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your first name" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">First Name:</label>
+                          <input type="text" id="First_Name" className="bg-gray-50 border border-gray-300 caret-green-500  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Enter your first name" required
 
                             {...register('First_Name')}
                           />
                         </div>
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name:</label>
-                          <input type="text" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your last name" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Last Name:</label>
+                          <input type="text" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your last name" required
 
 
                             {...register('Last_Name')}
                           />
                         </div>
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Tagline:</label>
-                          <input type="text" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your last name" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Your Tagline:</label>
+                          <input type="text" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your last name" required
 
 
                             {...register('Last_Name')}
                           />
                         </div>
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Hourly Fee:</label>
-                          <input type="number" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your last name" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Hourly Fee:</label>
+                          <input type="number" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your last name" required
 
 
                             {...register('Last_Name')}
@@ -159,23 +159,23 @@ const BecomeaTutor = () => {
                       </div> */}
                        <div className="grid md:grid-cols-3 mt-10 md:gap-6">
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number:</label>
-                          <input type="number" id="Phone_Number" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your phone number" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Phone Number:</label>
+                          <input type="number" id="Phone_Number" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your phone number" required
 
                             {...register("Phone_Number")}
                           />
                         </div>
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address:</label>
-                          <input type="text" id="Email_Address" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email address" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Email Address:</label>
+                          <input type="text" id="Email_Address" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your email address" required
 
                             {...register("Email_Address")}
 
                           />
                         </div>
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address:</label>
-                          <input type="text" id="Email_Address" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email address" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Email Address:</label>
+                          <input type="text" id="Email_Address" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your email address" required
 
                             {...register("Email_Address")}
 
@@ -184,8 +184,8 @@ const BecomeaTutor = () => {
 
                       </div>
                       <div className="mb-2">
-                        <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject:</label>
-                        <input type="text" id="Subject" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter Subject" required
+                        <label className="block mb-2 text-sm font-medium text-gray-900 ">Subject:</label>
+                        <input type="text" id="Subject" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter Subject" required
 
                           {...register("Subject")}
                         />
@@ -193,12 +193,12 @@ const BecomeaTutor = () => {
 
                       <div className="mb-2">
 
-                        <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Comment</label>
-                        <textarea id="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+                        <label className="block mb-2 text-sm font-medium text-gray-900 ">Comment</label>
+                        <textarea id="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 " placeholder="Leave a comment..."></textarea>
 
                       </div>
                       <div>
-                        <button type="submit" className="text-white bg-[#2c6777] hover:bg-[#2c6777] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button></div>
+                        <button type="submit" className="text-white bg-[#2c6777] hover:bg-[#2c6777] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Submit</button></div>
 
                     </div>
 
@@ -220,9 +220,9 @@ const BecomeaTutor = () => {
               <div className="col-span-12  ">
 
                 <div>
-                  <div className=" w-auto  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                  <div className=" w-auto  bg-white border border-gray-200 rounded-lg shadow">
 
-                    <h5 className="mb-3 p-2 text-base font-semibold bg-[#2c6777] text-white text-center  rounded-t-lg  border-b-2 w-full md:text-xl dark:text-white">
+                    <h5 className="mb-3 p-2 text-base font-semibold bg-[#2c6777] text-white text-center  rounded-t-lg  border-b-2 w-full md:text-xl ">
                       Do You Have Any Questions?
                     </h5>
 
@@ -230,15 +230,15 @@ const BecomeaTutor = () => {
                     <div className="p-4">
                       <div className="grid md:grid-cols-2 md:gap-6">
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name:</label>
-                          <input type="text" id="First_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your first name" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">First Name:</label>
+                          <input type="text" id="First_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your first name" required
 
                             {...register('First_Name')}
                           />
                         </div>
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name:</label>
-                          <input type="text" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your last name" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Last Name:</label>
+                          <input type="text" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your last name" required
 
 
                             {...register('Last_Name')}
@@ -248,15 +248,15 @@ const BecomeaTutor = () => {
                       </div>
                       <div className="grid md:grid-cols-2 md:gap-6">
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name:</label>
-                          <input type="text" id="First_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your first name" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">First Name:</label>
+                          <input type="text" id="First_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your first name" required
 
                             {...register('First_Name')}
                           />
                         </div>
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name:</label>
-                          <input type="text" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your last name" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Last Name:</label>
+                          <input type="text" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your last name" required
 
 
                             {...register('Last_Name')}

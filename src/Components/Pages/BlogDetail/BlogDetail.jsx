@@ -177,7 +177,7 @@ const BlogDetail = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <p class=" text-[16]  font-[400] tracking-tight text-black-900 dark:text-black mb-8">
+                                        <p class=" text-[16]  font-[400] tracking-tight text-black-900  mb-8">
                                             Lorem
                                             Ipsum is
                                             simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -328,9 +328,9 @@ const BlogDetail = () => {
                                     <img src={blogDetailCardImg} alt="Laptop on Desk"
                                         class="md:w-1/3 rounded-t-lg xl:rounded-l-lg md:rounded-l-lg md:rounded-t-none " />
                                     <div class="pl-4 lg:p-2 md:mt-3 mt-5 ">
-                                        <p class="mb-2 text-[16px]  font-[500] tracking-tight text-black-900 dark:text-black">
+                                        <p class="mb-2 text-[16px]  font-[500] tracking-tight text-black-900 ">
                                         What Type clab Should You Join During High School? </p>
-                                        <p className="text-sm text-gray-700 truncate dark:text-gray-400 pb-2">
+                                        <p className="text-sm text-gray-700 truncate  pb-2">
                                             read more...
                                         </p>
 

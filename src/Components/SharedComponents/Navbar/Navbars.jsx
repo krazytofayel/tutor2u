@@ -27,7 +27,7 @@ const Navbars = () => {
   
   <div>
   <nav className="container mx-auto   md:flex  justify-between items-center text-black py-4 ">
-			<div className="  font-bold text-3xl">
+			<div className="  ">
 			<img src={navlogo} alt=" main logo" />
 			</div>
 

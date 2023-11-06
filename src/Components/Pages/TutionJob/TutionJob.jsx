@@ -108,9 +108,9 @@ const TutionJob = () => {
               <div className="col-span-12 lg:col-span-3 ">
 
                 <div>
-                  <div className=" w-auto  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                  <div className=" w-auto  bg-white border border-gray-200 rounded-lg shadow ">
 
-                    <h5 className="mb-3 p-2 text-base font-semibold bg-[#2c6777] text-white text-center  rounded-t-lg  border-b-2 w-full md:text-xl dark:text-white">
+                    <h5 className="mb-3 p-2 text-base font-semibold bg-[#2c6777] text-white text-center  rounded-t-lg  border-b-2 w-full md:text-xl ">
                       Do You Have Any Questions?
                     </h5>
 
