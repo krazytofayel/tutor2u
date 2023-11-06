@@ -14,6 +14,7 @@ import Blogepagecarddata from"../../SharedComponents/Data/BlogPageCarddata/Blogp
 import { motion } from "framer-motion";
 import Blogpagecard from "../Props/BlogPageCard/Blogpagecard";
 import BlogPageMainCard from "../Props/BlogPageMainCard/BlogPageMainCard";
+import Footer from "../../SharedComponents/Footer/Footer";
 
 const Blog = () => {
   const [navfix, setNavfix] = useState(false);
@@ -98,7 +99,7 @@ const Blog = () => {
   console.log(currentPage)
   return (
     <div>
-      <div className={`z-10  ${navfix ? ' top-0 h-[12%] w-full fixed bg-white ' : ''}`} >
+     <div className={`z-10  ${navfix ? ' top-0 h-[8%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
         <Navbars className='relative ' />
 
       </div>
@@ -355,6 +356,9 @@ if (currentPage < Math.ceil(BlogpageMainCarddata.length / itemsPerPage)) {
             </section>
           </div>
         </div>
+      </section>
+      <section className="">
+        <Footer />
       </section>
     </div>
   );

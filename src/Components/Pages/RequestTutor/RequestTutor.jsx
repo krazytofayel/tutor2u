@@ -22,7 +22,7 @@ const RequestTutor = () => {
 
   return (
     <>
-      <div className={`z-10  ${navfix ? ' top-0 h-[12%] w-full fixed bg-white ' : ''}`} >
+      <div className={`z-10  ${navfix ? ' top-0 h-[8%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
         <Navbars className='relative ' />
 
       </div>

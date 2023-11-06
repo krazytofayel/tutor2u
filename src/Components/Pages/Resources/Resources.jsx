@@ -10,6 +10,7 @@ import StarRating from "../../SharedComponents/Helper/StarRating/StarRating";
 import Resourcescarddata from "../../SharedComponents/Data/ResourcesCarddata/Resourcescarddata.json"
 import ResourcesCard from "../Props/Resources/ResourcesCard";
 import { motion } from "framer-motion";
+import Footer from "../../SharedComponents/Footer/Footer";
 
 const Resources = () => {
   const [navfix, setNavfix] = useState(false);
@@ -86,7 +87,7 @@ const Resources = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
     <div>
-      <div className={`z-10 ${navfix ? ' top-0 h-[12%] w-full fixed bg-white ' : ''}`} >
+      <div className={`z-10  ${navfix ? ' top-0 h-[8%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
         <Navbars className='relative ' />
 
       </div>
@@ -358,6 +359,9 @@ const Resources = () => {
             </section>
           </div>
         </div>
+      </section>
+      <section className="">
+        <Footer />
       </section>
     </div>
   );

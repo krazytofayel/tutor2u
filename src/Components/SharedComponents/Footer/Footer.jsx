@@ -87,10 +87,10 @@ const Footer = () => {
 									<a class="hover:underline" href="">
 										<li>Our Services</li>
 									</a>
-									<Link to='/tutor_resources' class="hover:underline" href="">
+									<Link to='/tutor_blog' class="hover:underline" href="">
 										<li>Blog</li>
 									</Link>
-									<Link to='/tutor_blog' class="hover:underline" href="">
+									<Link to='/tutor_resources' class="hover:underline" href="">
 										<li>Resource </li>
 									</Link>
 									<a class="hover:underline" href="">
