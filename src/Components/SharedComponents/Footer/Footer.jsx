@@ -82,8 +82,8 @@ const Footer = () => {
 					<div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
 						<div class="lg:w-2/6 md:w-1/2 w-full px-6">
 							<h2 class=" mb-[18px]  text-[#FFFFFF] text-[18px] font-bold select-none">Quick Links</h2>
-							<nav class="list-none mb-10">
-								<ul class="flex flex-col gap-[10px] text-[#FFFFFF]">
+							<nav class="list-none mb-5">
+								<ul class="flex flex-col gap-1 text-[#FFFFFF]">
 									<a class="hover:underline" href="">
 										<li>Our Services</li>
 									</a>
