@@ -3,6 +3,7 @@ import Navbars from "../../SharedComponents/Navbar/Navbars"
 import aboutsideimg from "../../../assets/AboutUs/about-us-side-banner.png";
 import { HiLocationMarker, HiMail, HiPhoneMissedCall } from 'react-icons/hi';
 import { useForm } from 'react-hook-form';
+import Footer from "../../SharedComponents/Footer/Footer";
 const ContactUs = () => {
   const [navfix, setNavfix] = useState()
   const { register, handleSubmit, errors } = useForm(); // initialize the hook
@@ -65,7 +66,7 @@ const ContactUs = () => {
 
 
             <h3 className="text-2xl lg:text-3xl text-gray-800 font-bold mb-2 mx-3">Get in Touch</h3>
-            <div className="grid grid-cols-12 gap-4  p-2">
+            <div className="grid grid-cols-12 gap-5 lg:gap-12  p-2">
 
               <div className="col-span-12 lg:col-span-9 mb-6 lg:mb-0">
 
@@ -190,6 +191,9 @@ const ContactUs = () => {
 
         </div>
 
+      </section>
+      <section className="">
+        <Footer />
       </section>
 
 

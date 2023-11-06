@@ -5,6 +5,7 @@ import { HiLocationMarker, HiMail, HiPhoneMissedCall } from 'react-icons/hi';
 import homebg3 from '../../../assets/images/homepage/bgimg3.png'
 import { useForm } from 'react-hook-form';
 import ImageUpload from '../../SharedComponents/Helper/ImageUpload/ImageUpload'
+import Footer from "../../SharedComponents/Footer/Footer";
 const BecomeaTutor = () => {
   const [navfix, setNavfix] = useState()
   const { register, handleSubmit } = useForm();
@@ -244,6 +245,9 @@ const BecomeaTutor = () => {
 
         </div>
 
+      </section>
+      <section className="">
+        <Footer />
       </section>
     
 

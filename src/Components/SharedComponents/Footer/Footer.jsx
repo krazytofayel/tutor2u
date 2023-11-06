@@ -1,8 +1,9 @@
-import Link from '../Data/Footerdata/footerdata.json'
+//import Link from '../Data/Footerdata/footerdata.json'
 import { BiLogoFacebookCircle, BiLogoTwitter, BiLogoYoutube, BiLogoInstagramAlt, BiLogoLinkedinSquare } from 'react-icons/bi';
 import { BsSendFill } from 'react-icons/bs'
 
 import FooterlogoImg from "../../../assets/images/navbar/white-footer-logo.png";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (
@@ -86,18 +87,26 @@ const Footer = () => {
 									<a class="hover:underline" href="">
 										<li>Our Services</li>
 									</a>
+									<Link to='/tutor_resources' class="hover:underline" href="">
+										<li>Blog</li>
+									</Link>
+									<Link to='/tutor_blog' class="hover:underline" href="">
+										<li>Resource </li>
+									</Link>
 									<a class="hover:underline" href="">
 										<li>FAQ</li>
 									</a>
 									<a class="hover:underline" href="">
 										<li>Career</li>
 									</a>
+
 									<a class="hover:underline" href="">
 										<li>Privacy Policy</li>
 									</a>
 									<a class="hover:underline" href="">
 										<li>Terms of Use </li>
 									</a>
+								
 
 								</ul>
 							</nav>
@@ -126,7 +135,6 @@ const Footer = () => {
 								<ul class="flex flex-col gap-[10px] text-[#FFFFFF]">
 
 									<p>Subscribe to our newsletter to stay<br /> up to date on everything Tutor2u
-
 									</p>
 
 

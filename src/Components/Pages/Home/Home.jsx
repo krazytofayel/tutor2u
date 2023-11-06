@@ -178,7 +178,7 @@ const Home = () => {
 
           <div className=" p-5 md:p-0 ">
 
-            <h1 className="text-[24px] text-gray-800 xl:text-[40px] lg:text-[36px] md:text-[27px] text-center  font-[650] max-w-xl mx-auto   mt-10 mb-10">Every Tutor is Professional and Highly Qualified</h1>
+            <h1 className="text-[24px] text-gray-700 xl:text-[40px] lg:text-[36px] md:text-[27px] text-center py-16  font-[650] max-w-xl mx-auto ">Every Tutor is Professional and Highly Qualified</h1>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center justify-items-center items-center  gap-5 p-2   ">

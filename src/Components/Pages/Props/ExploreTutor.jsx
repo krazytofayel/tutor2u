@@ -1,5 +1,5 @@
 
-
+import {AiOutlineHeart} from 'react-icons/ai'
 const ExploreTutor = ({ exploretutordata }) => {
   const { id, name, city, phone, email, balance, picture } = exploretutordata
   return (
@@ -13,18 +13,18 @@ const ExploreTutor = ({ exploretutordata }) => {
             <img className="rounded-t-lg" src={picture} alt="404" />
           </a>
           <div className="p-5">
-            <div className="flex items-center space-x-4 mb-10">
+            <div className="flex items-center space-x-4 mb-3">
 
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium text-gray-900 truncate ">
+                <p className="text-lg font-bold text-[#2c6777] truncate ">
                   {name}
                 </p>
                 <p className="text-sm text-black truncate">
                   {city}
                 </p>
               </div>
-              <div className="inline-flex items-center text-base font-semibold text-gray-900 ">
-                icon
+              <div className="inline-flex items-center text-base font-medium text-gray-900 ">
+              <AiOutlineHeart></AiOutlineHeart>
               </div>
             </div>
 
@@ -32,36 +32,36 @@ const ExploreTutor = ({ exploretutordata }) => {
             <div className="flex items-center space-x-4">
 
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium text-gray-900 truncate ">
+                <p className="text-sm font-bold text-gray-900 truncate ">
                   Mobile:
                 </p>
 
               </div>
-              <div className="inline-flex items-center text-base font-bold text-gray-900 ">
+              <div className="inline-flex items-center text-base font-medium text-gray-900 ">
                 {phone}
               </div>
             </div>
             <div className="flex items-center space-x-4">
 
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium text-gray-900 truncate ">
+                <p className="text-sm font-bold text-gray-900 truncate ">
                   Email:
                 </p>
 
               </div>
-              <div className="inline-flex items-center text-base font-bold text-gray-900 ">
+              <div className="inline-flex items-center text-base font-medium text-gray-900 ">
                 {email}
               </div>
             </div>
             <div className="flex items-center space-x-4">
 
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium text-gray-900 truncate ">
+                <p className="text-sm font-bold text-gray-900 truncate ">
                   Starting from:
                 </p>
 
               </div>
-              <div className="inline-flex items-center text-base font-bold text-gray-900 ">
+              <div className="inline-flex items-center text-base font-medium text-gray-900 ">
                 {balance}
               </div>
             </div>
@@ -69,12 +69,12 @@ const ExploreTutor = ({ exploretutordata }) => {
             <div className="flex items-center space-x-4">
 
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium text-gray-900 truncate ">
+                <p className="text-sm font-bold text-gray-900 truncate ">
                   Qualification:
                 </p>
 
               </div>
-              <div className="inline-flex items-center  text-sm font-bold text-gray-900 ">
+              <div className="inline-flex items-center  text-sm font-medium text-gray-900 ">
                 B.Tech/B.E.
               </div>
             </div>
@@ -88,7 +88,7 @@ const ExploreTutor = ({ exploretutordata }) => {
               </svg>
 
 
-              <span className=" text-black text-md font-semibold  ml-3">5.0 (10000)</span>
+              <span className=" text-black text-sm font-bold  ml-3">5.0 (10000)</span>
             </div>
           </div>
         </div>

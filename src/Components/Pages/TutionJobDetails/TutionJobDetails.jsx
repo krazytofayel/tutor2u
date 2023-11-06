@@ -3,6 +3,7 @@ import { useState } from "react";
 import Navbars from "../../SharedComponents/Navbar/Navbars";
 import aboutsideimg from "../../../assets/AboutUs/about-us-side-banner.png";
 import { useForm } from 'react-hook-form';
+import Footer from "../../SharedComponents/Footer/Footer";
 
 const TutionJobDetails = () => {
 
@@ -52,7 +53,7 @@ const TutionJobDetails = () => {
             <section className="Contact_Us_Middle ">
                 <div className="bg-[#DCECFA] lg:p-16">
                     <div className="container mx-auto">
-                        <div className="grid grid-cols-12 gap-4 p-2">
+                        <div className="grid grid-cols-12 gap-5 lg:gap-12 p-2">
 
                             <div className="col-span-12 lg:col-span-9 mb-6 lg:mb-0">
 
@@ -272,6 +273,9 @@ const TutionJobDetails = () => {
                 </div>
 
             </section>
+            <section className="">
+        <Footer />
+      </section>
         </>
     )
 }

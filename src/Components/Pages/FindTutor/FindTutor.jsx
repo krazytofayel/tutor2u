@@ -9,6 +9,7 @@ import StarRating from "../../SharedComponents/Helper/StarRating/StarRating";
 import A from "../../SharedComponents/Data/FindTutordata/FindTutordata.json"
 import FindTutors from "../Props/FindTutor/FindTutors";
 import TutorProfileDetails from "../TutorProfileDetailsPage/TutorProfileDetails";
+import Footer from "../../SharedComponents/Footer/Footer";
 
 const FindTutor = () => {
   const [navfix, setNavfix] = useState(false);
@@ -114,7 +115,7 @@ const FindTutor = () => {
             <div className="">
 
               <h3 className="text-2xl lg:text-4xl font-bold text-center text-cyan-700 py-5 ">154,3 Search Result in “English” Tutor</h3>
-              <div className="grid grid-cols-12 gap-4  p-2 mt-10">
+              <div className="grid grid-cols-12 gap-5 lg:gap-12 p-2 mt-10">
                 <div className="col-span-12 md:col-span-8 lg:col-span-9 mb-6 lg:mb-0">
                   <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="relative">
@@ -310,6 +311,10 @@ const FindTutor = () => {
             </section>
           </div>
         </div>
+      </section>
+
+      <section className="">
+        <Footer />
       </section>
     </div>
   );

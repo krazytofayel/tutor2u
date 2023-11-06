@@ -5,6 +5,7 @@ import problemresolvedsideimg from "../../../assets/AboutUs/problem-resolved-sid
 import solutionsideimg from "../../../assets/AboutUs/solution-side-img.png";
 import howitworkimg from "../../../assets/AboutUs/how-it work-img.png";
 import { Accordion } from 'flowbite-react';
+import Footer from "../../SharedComponents/Footer/Footer";
 const AboutUs = () => {
     const [navfix, setNavfix] = useState(false);
 
@@ -18,7 +19,7 @@ const AboutUs = () => {
     window.addEventListener("scroll", setFixed);
     return (
         <>
-            <div className={`z-10 container-xl mx-auto xl:px-56 ${navfix ? ' top-0 h-[10%] w-full fixed bg-white ' : ''}`} >
+            <div className={`z-10  ${navfix ? ' top-0 h-[10%] w-full fixed bg-white ' : ''}`} >
                 <Navbars className='relative ' />
 
             </div>
@@ -368,6 +369,11 @@ const AboutUs = () => {
 
             </section>
             {/* FAQ section end */}
+
+            <section className="">
+        <Footer />
+      </section>
+
         </>
     );
 };

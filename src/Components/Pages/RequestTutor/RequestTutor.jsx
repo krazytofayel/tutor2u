@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbars from "../../SharedComponents/Navbar/Navbars";
 import aboutsideimg from "../../../assets/AboutUs/about-us-side-banner.png";
 import { useForm } from 'react-hook-form';
+import Footer from "../../SharedComponents/Footer/Footer";
 
 const RequestTutor = () => {
   const [navfix, setNavfix] = useState(false);
@@ -278,6 +279,10 @@ const RequestTutor = () => {
 
 
 
+      </section>
+
+      <section className="">
+        <Footer />
       </section>
 
     </>

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { RxCross2 } from 'react-icons/rx';
 import Navbars from '../../SharedComponents/Navbar/Navbars';
+import Footer from '../../SharedComponents/Footer/Footer';
 const TutionJob = () => {
   const [navfix, setNavfix] = useState(false);
 
@@ -102,6 +103,7 @@ const TutionJob = () => {
 
 
               </div>
+              
               <div className="col-span-12 lg:col-span-3 ">
 
                 <div>
@@ -143,6 +145,10 @@ const TutionJob = () => {
         </div>
 
       </section>
+      <section className="">
+        <Footer />
+      </section>
+
 
     </>
   )
