@@ -48,7 +48,7 @@ const Home = () => {
                 </h1>
 
                 <p className="leading-relaxed xl:text-[20px] text-lg text-white mb-4 lg:font-semibold md:font-semibold font-normal">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Skilled and Emotionally Intelligent Educators that will make learning exciting and engaging.
                 </p>
                 <div>
 
