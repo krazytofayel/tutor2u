@@ -41,14 +41,11 @@ const BecomeaTutor = () => {
             <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
               <div className="xl:w-[45rem]">
                 <h1 className="text-white text-center md:text-start text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
-                  Animated Night Hill Illustrations
+                Be an Educator
                 </h1>
 
                 <p className="leading-relaxed text-center md:text-start xl:text-[20px] text-lg text-white mb-4 lg:font-semibold md:font-semibold font-normal">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                  Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.
-                  It has
+                Join us in shaping the future of our students, and embark on a rewarding journey as an integral member of our tutoring program. Your passion for teaching will find a meaningful home here.
                 </p>
               </div>
             </div>
@@ -69,12 +66,12 @@ const BecomeaTutor = () => {
             <div className="xl:w-4/6 lg:w-2/4 md:w-1/2  w-full lg:pl-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
 
               <div className="xl:w-[45rem]">
-                <h1 className="text-black text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
-                  Why choice tutor2u?
+                <h1 className="text-gray-800 text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
+                Benefits of tutoring with us
                 </h1>
 
                 <p className="leading-relaxed xl:text-[20px] text-lg text-black mb-4 lg:font-semibold md:font-semibold font-normal">
-                  We have an astounding success in teaching with our skilled and passionate educators who does the work with love and exellence. Your path to excellence starts with the right tutor by your side.
+                The benefits of tutoring with us extend beyond the classroom, as we invite educators like you to join our dynamic tutoring program. As part of our team, you'll have the opportunity to make a lasting impact on the lives of eager learners, helping them unlock their full academic potential.
                 </p>
               </div>
             </div>
@@ -91,7 +88,7 @@ const BecomeaTutor = () => {
           <div className="container mx-auto">
 
 
-            <h3 className="text-2xl font-bold mb-2 py-2">Get in Touch</h3>
+            <h3 className="text-3xl text-gray-800 font-bold mb-2 py-2 ml-3">Get in Touch</h3>
             <div className="grid grid-cols-12 gap-5  p-2">
 
               <div className="col-span-12 ">
@@ -99,10 +96,10 @@ const BecomeaTutor = () => {
                 <form action="" onSubmit={handleSubmit(onSubmit)}>
                   <div className="">
                     <div className="form_Contant bg-white rounded-xl p-4">
-                      <div className="grid grid-rows-2 grid-flow-col">
+                      <div className="grid grid-rows-2 gap-2 grid-flow-col">
                         <div className="mb-2">
                           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name:</label>
-                          <input type="text" id="First_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your first name" required
+                          <input type="text" id="First_Name" className="bg-gray-50 border border-gray-300 caret-green-500  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your first name" required
 
                             {...register('First_Name')}
                           />
@@ -110,6 +107,22 @@ const BecomeaTutor = () => {
                         <div className="mb-2">
                           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name:</label>
                           <input type="text" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your last name" required
+
+
+                            {...register('Last_Name')}
+                          />
+                        </div>
+                        <div className="mb-2">
+                          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Tagline:</label>
+                          <input type="text" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your last name" required
+
+
+                            {...register('Last_Name')}
+                          />
+                        </div>
+                        <div className="mb-2">
+                          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Hourly Fee:</label>
+                          <input type="number" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your last name" required
 
 
                             {...register('Last_Name')}
@@ -126,12 +139,38 @@ const BecomeaTutor = () => {
                       
                       </div>
                      
-                      <div className="grid md:grid-cols-2 mt-10 md:gap-6">
+                      {/* <div className="grid md:grid-cols-2 mt-10 md:gap-6">
                         <div className="mb-2">
                           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number:</label>
                           <input type="number" id="Phone_Number" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your phone number" required
 
                             {...register("Phone_Number")}
+                          />
+                        </div>
+                        <div className="mb-2">
+                          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address:</label>
+                          <input type="text" id="Email_Address" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email address" required
+
+                            {...register("Email_Address")}
+
+                          />
+                        </div>
+
+                      </div> */}
+                       <div className="grid md:grid-cols-3 mt-10 md:gap-6">
+                        <div className="mb-2">
+                          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number:</label>
+                          <input type="number" id="Phone_Number" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your phone number" required
+
+                            {...register("Phone_Number")}
+                          />
+                        </div>
+                        <div className="mb-2">
+                          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address:</label>
+                          <input type="text" id="Email_Address" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email address" required
+
+                            {...register("Email_Address")}
+
                           />
                         </div>
                         <div className="mb-2">

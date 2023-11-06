@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { RxCross2 } from 'react-icons/rx';
 import Navbars from '../../SharedComponents/Navbar/Navbars';
 import Footer from '../../SharedComponents/Footer/Footer';
+import { Link } from 'react-router-dom';
 const TutionJob = () => {
   const [navfix, setNavfix] = useState(false);
 
@@ -88,7 +89,7 @@ const TutionJob = () => {
                           <p className="text-sm font-medium text-[#2c6777]">Other Requerment: -</p>
                         </div>
                         <div>
-                          <button className="text-sm text-white font-medium bg-[#2c6777] rounded-full px-3  mr-2 py-1">See Details</button>
+                          <Link to='/tutor_job_details' className="text-sm text-white font-medium bg-[#2c6777] rounded-full px-3  mr-2 py-1">See Details</Link>
                           <p className="text-[10px] mt-2"><span >posted on:</span> 10 Aug At 4:40 PM</p>
 
                         </div>

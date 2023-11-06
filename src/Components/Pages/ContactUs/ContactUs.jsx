@@ -39,14 +39,11 @@ const ContactUs = () => {
             <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
               <div className="xl:w-[45rem]">
                 <h1 className="text-white text-center md:text-start text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
-                  Animated Night Hill Illustrations
+                Contact Us
                 </h1>
 
-                <p className="leading-relaxed text-center md:text-start xl:text-[20px] text-lg text-white mb-4 lg:font-semibold md:font-semibold font-normal">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                  Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.
-                  It has
+                <p className="leading-relaxed text-center md:text-start xl:text-[24px] text-lg text-white mb-4 lg:font-semibold md:font-semibold font-normal">
+                Welcome to Tutor2U. We're here to listen and provide you with the best service tailored to your educational needs. Let's make your thoughts, questions, and feedback the building blocks of our relationship. Get in touch today and let's create connections that matter.
                 </p>
               </div>
             </div>

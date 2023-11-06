@@ -35,9 +35,7 @@ const AboutUs = () => {
                                 </h1>
 
                                 <p className="leading-relaxed xl:text-[20px] text-lg text-white mb-4 lg:font-semibold md:font-semibold font-normal">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Established on (Date where tutor2u started) Welcome to our world of excellence in education! At Tutor2U, we believe that every learners deserves the best educators who can inspire, guide, and transform their academic journey. Our tutor sessions are carefully designed to provide a personalized and enriching learning experience. With diverse backgrounds and expertise; Tutor2U educators are equipped with exceptional qualifications and a commitment to excellence.
                                     It has
                                 </p>
                             </div>
@@ -67,10 +65,7 @@ const AboutUs = () => {
                                 </h1>
 
                                 <p className="leading-relaxed xl:text-[20px] text-lg text-black mb-4  font-normal">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries,
+                                Students and parents seek personal tutors because tutoring provides personalized support for their educational and personal development needs. We are one with educators with a mission to reduce learning difficulties and develop the Emotional Intelligence required to tailor lessons to each student's learning style
                                 </p>
                             </div>
                         </div>
@@ -90,10 +85,7 @@ const AboutUs = () => {
                                 </h1>
 
                                 <p className="leading-relaxed xl:text-[20px] text-lg text-black mb-4  font-normal">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has
+                                Our tutors are not just educators; they are mentors, guides, and friends who bring emotional intelligence to the forefront of the learning experience. We care about the fact that every student is unique and that's why we have the best tutors who are equipped with the ability to connect on a personal level. This can contribute in building trust and rapport to ensure that students feel comfortable during the sessions
                                 </p>
                             </div>
                         </div>
@@ -189,8 +181,7 @@ const AboutUs = () => {
                                 </h1>
 
                                 <p className="leading-relaxed xl:text-[20px] text-lg text-black mb-4  font-normal">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry standard dummy text ever since the
+                                To be the leading online tutoring platform that empowers students to achieve academic excellence and gain confidence and unlock their full potential.
                                 </p>
                             </div>
                         </div>

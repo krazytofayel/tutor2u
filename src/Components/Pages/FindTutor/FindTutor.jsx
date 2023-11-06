@@ -93,11 +93,8 @@ const FindTutor = () => {
                   Animated Night Hill Illustrations
                 </h1>
 
-                <p className="leading-relaxed xl:text-[20px] text-lg text-white mb-4 lg:font-semibold md:font-semibold font-normal">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                  Ipsum has been the industry,s standard dummy text ever since the 1500s, when an
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.
-                  It has
+                <p className="leading-relaxed xl:text-[22px] text-lg text-white mb-4 lg:font-semibold md:font-semibold font-normal">
+                Find and connect with a skilled tutor and embark on a journey of academic excellence and fostering a sense of accomplishment and self-assurance.
                 </p>
               </div>
             </div>
