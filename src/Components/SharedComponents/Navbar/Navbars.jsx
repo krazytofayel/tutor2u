@@ -25,7 +25,7 @@ const Navbars = () => {
    
   <>
   
-  <div className='shadow-md'>
+  <div >
   <nav className="container mx-auto   md:flex  justify-between items-center text-black py-[18.5px] ">
 			<div className="  ">
 			<img src={navlogo} alt=" main logo" />
