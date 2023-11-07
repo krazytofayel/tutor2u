@@ -32,7 +32,7 @@ const Navbars = () => {
 			</div>
 
 			<div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 top-1 cursor-pointer md:hidden">
-				{open ? '+' : '-'}
+				{open ? '+' : '...'}
 			</div>
 
 			<ul
