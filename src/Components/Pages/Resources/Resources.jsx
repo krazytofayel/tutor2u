@@ -107,7 +107,7 @@ const Resources = () => {
                 transition={{ duration: 0.5 }} className="max-w-lg text-center mx-auto">Find what's best to support your learning and improve your knowledge further. we have what you need here.</motion.p>
               <motion.div initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }} className="grid grid-cols-12 gap-4  p-2 mt-10">
+                transition={{ duration: 0.5 }} className="grid grid-cols-12 gap-4 xl:gap-10  p-2 mt-10">
 
                 <div className="col-span-12 md:col-span-4 lg:col-span-3 ">
 
@@ -132,7 +132,7 @@ const Resources = () => {
                           />
                           <button
                             type="submit"
-                            className="text-white absolute right-2.5 bottom-1 bg-[#2c6777] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-2 py-1 "
+                            className="text-white absolute right-2 bottom-[5px] bg-[#2c6777] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-3 py-1 "
                           >
                             Search
                           </button>
@@ -165,8 +165,8 @@ const Resources = () => {
                       </div>
                       <div>
                         <label htmlFor="minmax-range" className="block mb-2 text-sm font-medium text-gray-900 ">Divission</label>
-                        <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
-                          <option >Choose a country</option>
+                        <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full py-2 ">
+                          <option  >Choose a country</option>
                           <option value="US">United States</option>
                           <option value="CA">Canada</option>
                           <option value="FR">France</option>
@@ -253,7 +253,7 @@ const Resources = () => {
 
 
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-5  p-2 lg:p-0">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-5 xl:gap-10 p-2 lg:p-0">
 
 
                     {

@@ -11,10 +11,10 @@ const ResourcesCard = ({resourcecarddata}) => {
         </a>
         <div className="p-5">
           <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight truncate text-gray-900 ">{Title}</h5>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight truncate text-[#2c6777] ">{Title}</h5>
           </a>
-          <p className="mb-3 font-normal text-gray-700 line-clamp-3 dark:text-gray-400">{description}</p>
-          <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
+          <p className="mb-3 font-normal text-gray-800 line-clamp-3 ">{description}</p>
+          <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#2c6777] rounded-md focus:ring-4 focus:outline-none focus:ring-blue-300 ">
             Read more
           
           </a>

@@ -7,6 +7,11 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('./src/assets/AboutUs/Group33745.png')",
+        'card-img1':"url('./src/assets/images/homepage/Maskgroup2.png')"
+       
+      }
   
     },
   },

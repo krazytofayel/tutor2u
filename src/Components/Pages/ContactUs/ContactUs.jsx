@@ -62,7 +62,7 @@ const ContactUs = () => {
           <div className="container mx-auto">
 
 
-            <h3 className="text-2xl lg:text-3xl text-gray-800 font-bold mb-2 mx-3">Get in Touch</h3>
+            <h3 className="text-2xl lg:text-3xl text-[#2c6777] font-bold ml-3 mb-2 mx-3">Get in Touch</h3>
             <div className="grid grid-cols-12 gap-5 lg:gap-12  p-2">
 
               <div className="col-span-12 lg:col-span-9 mb-6 lg:mb-0">

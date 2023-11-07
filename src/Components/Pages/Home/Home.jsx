@@ -23,7 +23,7 @@ const Home = () => {
   }
   window.addEventListener('scroll', setFixed);
 
-  const [loadmore, setLoadMore] = useState(3)
+  const [loadmore, setLoadMore] = useState(4)
   function handleLoadMore() {
     setLoadMore(prevNum => prevNum + 3);
   }
@@ -87,11 +87,11 @@ const Home = () => {
             <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full md:pl-10 lg:pl-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
 
               <div className="xl:w-[45rem]">
-                <h1 className="text-gray-800 text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
+                <h1 className="text-[#2c6777]  text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
                   Why choice tutor2u?
                 </h1>
 
-                <p className="leading-relaxed xl:text-[20px] text-lg  text-black mb-4 lg:font-semibold md:font-semibold font-normal">
+                <p className="leading-relaxed xl:text-[20px] text-lg  text-gray-800 mb-4 lg:font-semibold md:font-semibold font-normal">
                   We have an astounding success in teaching with our skilled and passionate educators who does the work with love and exellence. Your path to excellence starts with the right tutor by your side.
                 </p>
               </div>
@@ -109,11 +109,11 @@ const Home = () => {
             <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
 
               <div className="xl:w-[45rem]">
-                <h1 className="text-gray-800 text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
+                <h1 className="text-[#2c6777]  text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
                   Talented and Qualified Tutors to Serve You for Help
                 </h1>
 
-                <p className="leading-relaxed xl:text-[20px] text-lg text-black mb-4 lg:font-semibold md:font-semibold font-normal">
+                <p className="leading-relaxed xl:text-[20px] text-lg text-gray-800 mb-4 lg:font-semibold md:font-semibold font-normal">
                   Our beloved experts worked so hard to earn their success in their expertise, the love to teach and make every lesson intelligible are what makes them valuable.
                 </p>
               </div>
@@ -140,7 +140,7 @@ const Home = () => {
 
             <div className=" p-5 md:p-0  ">
 
-              <h1 className=" text-[24px] max-w-3xl text-gray-800 xl:text-[40px] lg:text-[36px] md:text-[27px] mx-auto text-center  font-[650] mb-10">Time to elevate your learning, Find a tutor in any subject below.</h1>
+              <h1 className=" text-[24px] max-w-3xl text-[#2c6777]  xl:text-[40px] lg:text-[36px] md:text-[27px] mx-auto text-center  font-[650] mb-10">Time to elevate your learning, Find a tutor in any subject below.</h1>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center justify-items-center items-center   gap-5 mb-10 ">
 
@@ -177,10 +177,10 @@ const Home = () => {
 
           <div className=" p-5 md:p-0 ">
 
-            <h1 className="text-[24px] text-gray-700 xl:text-[40px] lg:text-[36px] md:text-[27px] text-center py-16  font-[650] max-w-xl mx-auto ">Every Tutor is Professional and Highly Qualified</h1>
+            <h1 className="text-[24px] text-[#2c6777] xl:text-[40px] lg:text-[36px] md:text-[27px] text-center py-16  font-[650] max-w-xl mx-auto ">Every Tutor is Professional and Highly Qualified</h1>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center justify-items-center items-center  gap-5 p-2   ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center justify-items-center items-center gap-5  p-2   ">
 
 
             {
@@ -197,7 +197,7 @@ const Home = () => {
             {ExploreTutordata.length > loadmore && (
               <button
                 onClick={handleLoadMore}
-                className="bg-[#2c6777] hover:bg-[#2c6777]  mb-10  text-white font-bold py-2 px-9 rounded "
+                className="bg-[#2c6777] hover:bg-[#2c6777]  mb-10  text-white font-bold py-2 px-9 rounded-md "
               >
                 Show More
               </button>
@@ -217,7 +217,7 @@ const Home = () => {
 
         <div className="  ">
 
-          <h1 className="text-[24px] text-gray-700 xl:text-[40px] lg:text-[36px] md:text-[27px] text-center mb-10   font-[650] max-w-xl mx-auto ">Let students speak for us</h1>
+          <h1 className="text-[24px] text-[#2c6777]  xl:text-[40px] lg:text-[36px] md:text-[27px] text-center mb-10   font-[650] max-w-xl mx-auto ">Let students speak for us</h1>
         </div>
         <Slider></Slider>
       </section>

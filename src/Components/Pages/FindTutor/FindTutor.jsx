@@ -111,7 +111,7 @@ const FindTutor = () => {
           <div className="container mx-auto ">
             <div className="">
 
-              <h3 className="text-2xl lg:text-4xl font-bold text-center text-cyan-700 py-5 ">154,3 Search Result in “English” Tutor</h3>
+              <h3 className="text-2xl lg:text-4xl font-bold text-center text-[#2c6777] py-5 ">154,3 Search Result in “English” Tutor</h3>
               <div className="grid grid-cols-12 gap-5 lg:gap-12 p-2 mt-10">
                 <div className="col-span-12 md:col-span-8 lg:col-span-9 mb-6 lg:mb-0">
                   <form onSubmit={handleSubmit(onSubmit)}>
@@ -122,13 +122,13 @@ const FindTutor = () => {
                         {...register('search')}
                         value={searchValue}
                         onChange={(e) => setValue('search', e.target.value)}
-                        className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-full bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+                        className="block w-full p-3 pl-10 text-sm text-gray-900 border border-gray-300 rounded-full bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
                         placeholder="Search your best teacher"
                         required
                       />
                       <button
                         type="submit"
-                        className="text-white absolute right-2.5 bottom-2 bg-[#2c6777] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-9 py-2 "
+                        className="text-white absolute right-2 bottom-[5px] bg-[#2c6777]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-9 py-2 "
                       >
                         Search
                       </button>

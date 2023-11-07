@@ -119,7 +119,7 @@ const Blog = () => {
                 transition={{ duration: 0.5 }} className="max-w-lg text-center mx-auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </motion.p>
               <motion.div initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }} className="grid grid-cols-12 gap-4  p-2 mt-10">
+                transition={{ duration: 0.5 }} className="grid grid-cols-12 gap-4 xl:gap-10  p-2 mt-10">
 
 
                 <div className="col-span-12 md:col-span-8 lg:col-span-9 mb-6 lg:mb-0">
@@ -128,7 +128,7 @@ const Blog = () => {
 
 
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-5  p-2 lg:p-0">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-5 xl:gap-10  p-2 lg:p-0">
 
 
                     {
@@ -226,7 +226,7 @@ if (currentPage < Math.ceil(BlogpageMainCarddata.length / itemsPerPage)) {
                         />
                         <button
                           type="submit"
-                          className="text-white absolute right-2.5 bottom-1 bg-[#2c6777] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-2 py-1 "
+                          className="text-white absolute right-2 bottom-[5px] bg-[#2c6777]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-2 py-1 "
                         >
                           Search
                         </button>

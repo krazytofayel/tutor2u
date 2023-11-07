@@ -25,8 +25,8 @@ const Navbars = () => {
    
   <>
   
-  <div>
-  <nav className="container mx-auto   md:flex  justify-between items-center text-black py-4 ">
+  <div className='shadow-md'>
+  <nav className="container mx-auto   md:flex  justify-between items-center text-black py-[18.5px] ">
 			<div className="  ">
 			<img src={navlogo} alt=" main logo" />
 			</div>
@@ -62,11 +62,11 @@ const Navbars = () => {
 				} `}>
 				
 
-				<button className="bg-[#C8D8E5] text-[#089bab] px-5 py-1 rounded font-bold truncate">
+				<button className="bg-[#d6e5f1] text-[#2c6777] px-5 py-1 rounded font-bold truncate">
 					<Link to="/becomea_tutor">Become a tutor</Link>
 				</button>
 
-				<button className="bg-[#089bab] text-white px-5 py-1 rounded font-bold truncate">
+				<button className="bg-[#2c6777] text-white px-5 py-1 rounded font-bold truncate">
 					<Link to="/sign_in">Sign in</Link>
 				</button>
 			</div>

@@ -11,16 +11,34 @@ import { BiLogoTwitter } from "react-icons/bi";
 import { BiLogoYoutube } from "react-icons/bi";
 import { BiLogoLinkedinSquare } from "react-icons/bi";
 import { BsReply } from "react-icons/bs";
+import Navbars from "../../SharedComponents/Navbar/Navbars";
+import { useState } from "react";
+import Footer from "../../SharedComponents/Footer/Footer";
 
 // import { FaRegCalendarAlt } from "react-icons/fa";
 
 const BlogDetail = () => {
+    const [navfix, setNavfix] = useState(false);
+
+    function setFixed() {
+      if (window.scrollY >= 70) {
+        setNavfix(true);
+        //console.log(scrollY)
+      } else {
+        setNavfix(false);
+      }
+    }
+    window.addEventListener('scroll', setFixed);
     return (
         <>
+          <div className={`z-10  ${navfix ? ' top-0 h-[8%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
+        <Navbars className='relative ' />
+
+      </div>
             <section className="bg-[#F0F8FF] py-20">
                 <div class="container px-5 pt-24 mx-auto">
                     <div class="flex flex-wrap w-full mb-5 flex-col items-center text-center">
-                        <h1 class=" lg:text-5xl lg:text-[40px] md:text-4xl  text-[24px] font-bold title-font mb-2 text-gray-900">
+                        <h1 class=" lg:text-5xl lg:text-[40px] md:text-4xl  text-[24px] font-bold title-font mb-2 text-[#2c6777]">
                             Welcome to Our Blog
                         </h1>
                         <p class="lg:w-1/2 w-full leading-relaxed text-gray-800 xl:text-2xl md:text-xl text-lg font-medium mt-3">
@@ -259,7 +277,7 @@ const BlogDetail = () => {
                             </form>
                             {/* {{-- search bar  section end --}} */}
                             {/* Category section start */}
-                            <div className="bg-[#ffffff] mt-8 rounded-lg mb-10 xl:ml-6 ml-0">
+                            <div className="bg-[#ffffff] mt-8 rounded-lg mb-10  ">
                                 <div className="bg-[#ffffff] p-4 w-full rounded-t-lg">
                                     <span type="" className=" text-gray-700 font-bold text-xl  ">
                                         Category
@@ -322,7 +340,7 @@ const BlogDetail = () => {
 
 
                             {/* horizontal card 1*/}
-                            <div class=" rounded-lg  md:flex my-3 xl:ml-6 ml-0 bg-white  border-8     border-[#ffffff]">
+                            <div class=" rounded-lg  md:flex my-3  bg-white  border-8     border-[#ffffff]">
 
                                 <div class="flex rounded-lg  md:flex-row flex-col  p-2 justify-center ">
                                     <img src={blogDetailCardImg} alt="Laptop on Desk"
@@ -330,7 +348,7 @@ const BlogDetail = () => {
                                     <div class="pl-4 lg:p-2 md:mt-3 mt-5 ">
                                         <p class="mb-2 text-[16px]  font-[500] tracking-tight text-black-900 ">
                                         What Type clab Should You Join During High School? </p>
-                                        <p className="text-sm text-gray-700 truncate  pb-2">
+                                        <p className="text-sm text-[#2c6777] truncate  pb-2">
                                             read more...
                                         </p>
 
@@ -344,6 +362,9 @@ const BlogDetail = () => {
 
                 {/* blog Qualification section end */}
             </section>
+            <section className="">
+        <Footer />
+      </section>
         </>
     );
 };
