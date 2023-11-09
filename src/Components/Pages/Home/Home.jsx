@@ -1,8 +1,9 @@
 import { useState } from "react";
 import Navbars from "../../SharedComponents/Navbar/Navbars"
 import Footer from "../../SharedComponents/Footer/Footer";
-import homebg from '../../../assets/images/homepage/Maskgroup.png'
+import homebg from '../../../assets/images/homepage/photo-handsome-male-student-his-female-groupmate-demonstrates-okay-gesture-agree-with-something_1-removebg-preview 1.png'
 import homebg3 from '../../../assets/images/homepage/bgimg3.png'
+import imageCircle from '../../../assets/images/homepage/Rectangle1355.png'
 import Carddata from '../../SharedComponents/Data/HomeSubjectCarddata/homesubjectcarddata.json'
 import ExploreTutordata from '../../SharedComponents/Data/ExploreTutordata/ExploreTutordata.json'
 import Cards from '../Props/Cards'
@@ -29,15 +30,14 @@ const Home = () => {
   }
   return (
     <>
-      <div className={`z-10  ${navfix ? ' top-0 h-[9%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
+      <div className={`z-20  ${navfix ? ' top-0 h-[9%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
         <Navbars className='relative ' />
 
       </div>
 
 
-
-
-      {/* <section className="Home_Top_Banner bg-[#2C6777]">
+{/* 
+ <section className="Home_Top_Banner bg-[#dcecfa]">
         <div className="container mx-auto pb-0 md:pb-0 lg:pb-0 px-2 md:px-0 lg:px-0  py-10 lg:py-14 md:py-10 xl:pt-10  ">
           <div className="mx-auto flex flex-wrap  md:flex-row flex-col items-center">
             <div className="xl:w-3/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
@@ -73,7 +73,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>  */}
 {/* try another way  */}
       <section className="Home_Top_Banner bg-[#dcecfa]">
 
@@ -106,12 +106,13 @@ const Home = () => {
             </div>
           </div>
 
-          <div className=" w-full  object-cover flex justify-end">
-            <img alt="Top-Banner-Side-Image" className="" src={homebg} />
+          <div className="relative w-full  object-cover flex justify-end">
+            <img src={imageCircle} className='absolute object-cover top-[10]' alt="" />
+            <img alt="Top-Banner-Side-Image" className="z-10" src={homebg} />
           </div>
 
         </div>
-      </section>
+      </section> 
 
 
 
