@@ -40,7 +40,7 @@ const TutionJob = () => {
             <h3 className="text-2xl text-[#2c6777] md:text-3xl font-bold ml-3 mb-2 mx-3">Get in Touch</h3>
             <div className="grid grid-cols-12 gap-5 lg:gap-12  p-2">
 
-              <div className="col-span-12 lg:col-span-8 mb-6 lg:mb-0">
+              <div className="col-span-12 lg:col-span-9 mb-6 lg:mb-0">
 
                 <form action="" >
 
@@ -110,7 +110,7 @@ const TutionJob = () => {
 
               </div>
               
-              <div className="col-span-12 lg:col-span-4 ">
+              <div className="col-span-12 lg:col-span-3 ">
 
                 <div>
                   <div className=" w-auto  bg-white border border-gray-200 rounded-lg shadow ">
