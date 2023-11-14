@@ -15,9 +15,9 @@ const TutionJob = () => {
   }
   window.addEventListener("scroll", setFixed);
   const ButtonData = [
-    { id: 1, buttoncontant: "Math" },
-    { id: 2, buttoncontant: "English" },
-    { id: 3, buttoncontant: "History" },
+    { id: 1, buttoncontant: "+ English Medium" },
+    { id: 2, buttoncontant: "+ Arabic Medium" },
+    { id: 3, buttoncontant: "+ Admission Test" },
   ];
   const ButtonData2 = [
     { id: 1, buttoncontant: "Any Gender" },
@@ -127,7 +127,7 @@ const TutionJob = () => {
                           <button
                             key={btn.id}
                             type="button"
-                            className="text-gray-800 bg-white hover:bg-[#089bab] border focus:ring-4 focus:outline-none hover:text-white focus:ring-blue-200 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center"
+                            className="text-gray-800 bg-white hover:bg-[#089bab] border focus:ring-4 focus:outline-none hover:text-white focus:ring-blue-200 font-medium rounded-full text-sm px-5 py-2.5 w-full text-center inline-flex items-center"
 
                           >
                             {btn.buttoncontant}
