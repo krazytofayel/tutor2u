@@ -79,18 +79,18 @@ const FindTutor = () => {
 
   return (
     <div>
-      <div className={`z-10  ${navfix ? ' top-0 h-[9%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
+       <div className={`z-20  ${navfix ? ' top-0 h-[10%] md:h-[11.5%] lg:h-[11%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
         <Navbars className='relative ' />
 
       </div>
 
       <section className="ContactUs_Top_Banner bg-[#2C6777]">
-        <div className="container px-5 py-10 lg:py-14 md:py-10  mx-auto ">
-          <div className=" mx-auto flex flex-wrap px-5 md:flex-row flex-col items-center">
+        <div className="container  py-10 lg:py-14 md:py-10  mx-auto ">
+          <div className=" mx-auto flex flex-wrap md:flex-row flex-col items-center">
             <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
               <div className="xl:w-[45rem] text-center lg:text-start">
                 <h1 className="text-white text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
-                  Animated Night Hill Illustrations
+                Find a Tutor
                 </h1>
 
                 <p className="leading-relaxed xl:text-[22px] text-lg text-white mb-4 lg:font-semibold md:font-semibold font-normal">
@@ -99,7 +99,7 @@ const FindTutor = () => {
               </div>
             </div>
 
-            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center flex justify-center">
+            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center flex justify-center md:justify-end">
               <img alt="Top-Banner-Side-Image"  src={aboutsideimg} />
             </div>
           </div>
@@ -139,7 +139,7 @@ const FindTutor = () => {
                         <button
                           key={btn.id}
                           type="button"
-                          className="text-black bg-white hover:bg-[#089bab] focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center"
+                          className="text-black bg-white hover:bg-[#2c6777] focus:ring-4 hover:text-white focus:outline-none focus:ring-blue-200 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center"
                           onClick={() => handleClick(btn.buttoncontant)}
                         >
                           {btn.buttoncontant}
@@ -174,7 +174,7 @@ const FindTutor = () => {
                   <div>
                     <div className=" w-auto  bg-white border border-gray-200 rounded-lg shadow p-2 ">
 
-                      <h5 className="mb-3 p-2 text-base font-semibold text-black text-center  rounded-t-lg  border-b-2 w-full md:text-xl ">
+                      <h5 className="mb-3 p-2 text-base font-semibold text-[#2c6777] text-center md:text-start  rounded-t-lg  border-b-2 w-full md:text-xl ">
                         Educational Level
                       </h5>
 
@@ -189,7 +189,7 @@ const FindTutor = () => {
                       <div>
 
 
-                        <h3 className="mb-4 font-semibold text-gray-900 ">Identification</h3>
+                        <h3 className="mb-4 font-semibold text-center md:text-start text-[#2c6777] mt-4 text-lg  ">Identification</h3>
 
 
                         {/* 
@@ -250,6 +250,8 @@ const FindTutor = () => {
 
 
                       <div>
+                      <h3 className="mb-4 font-semibold text-center md:text-start text-[#2c6777] mt-4 text-lg  ">Rating</h3>
+
                         <StarRating
                           selectedStars={selectedStars1}
                           setSelectedStars={setSelectedStars1}
@@ -268,7 +270,7 @@ const FindTutor = () => {
                           handleClearFilter(setSelectedStars1);
                           handleClearFilter(setSelectedStars2);
                         }}
-                        className="w-full bg-[#DCECFA] text-[#2c2f32] font-bold text-center py-2 px-4 rounded-full mt-2"
+                        className="w-full bg-[#2c6777]  text-white  font-bold text-center py-2 px-4 rounded-full mt-2"
                       >
                         Clear Filter
                       </button>
