@@ -22,7 +22,7 @@ const RequestTutor = () => {
 
   return (
     <>
-      <div className={`z-10  ${navfix ? ' top-0 h-[9%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
+    <div className={`z-20  ${navfix ? ' top-0 h-[12%] md:h-[14.5%] lg:h-[10.5%]  w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
         <Navbars className='relative ' />
 
       </div>
@@ -30,11 +30,11 @@ const RequestTutor = () => {
 
    
       <section className="bg-[#2C6777] ">
-        <div className="xl:w-[55rem] lg:w-[38rem] mx-auto py-10 text-center">
+        <div className="xl:w-[55rem] lg:w-[38rem] mx-auto py-24 text-center">
           <h1 className="text-white text-[35px] xl:text-[50px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
             Request a Tutor
           </h1>
-          <p className="leading-relaxed xl:text-[30px] text-xl text-white mb-4 lg:font-medium  md:font-semibold font-medium  mx-4">
+          <p className="leading-relaxed xl:text-[24px] text-xl text-white mb-4 lg:font-medium  md:font-semibold font-medium  mx-4">
             Looking for your desired tutor at Tutor2U? let us do the work for you.If you need a tutor, fill out the form below. We will contact you.
 
           </p>
