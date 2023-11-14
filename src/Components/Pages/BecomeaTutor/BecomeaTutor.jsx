@@ -57,7 +57,7 @@ const BecomeaTutor = () => {
         </div>
       </section>
 
-      <section className="BecomeaTutor_Secound_Banner ">
+      {/* <section className="BecomeaTutor_Secound_Banner ">
         <div className="container py-10 lg:py-20 md:py-10  mx-auto ">
           <div className="  flex flex-col md:flex-row gap-5 justify-between  items-center p-2 md:p-0">
             <div className=" md:w-full   h-auto object-cover object-center mx-auto">
@@ -72,6 +72,29 @@ const BecomeaTutor = () => {
 
                 <p className="leading-relaxed xl:text-[20px] text-lg text-black mb-4 lg:font-semibold md:font-semibold font-normal">
                   The benefits of tutoring with us extend beyond the classroom, as we invite educators like you to join our dynamic tutoring program. As a part of our team, you'll have the opportunity to make a lasting impact on the lives of eager learners, helping them unlock their full academic potential.
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section> */}
+          <section className="Home_Secound_Banner ">
+        <div className="container  mx-auto  py-10 lg:py-28 md:py-20  ">
+          <div className=" mx-auto flex flex-wrap   md:flex-row flex-col items-center">
+            <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full  lg:h-auto h-auto object-cover object-center flex justify-center md:justify-start">
+              <img alt="Top-Banner-Side-Image" className=" " src={homebg3} />
+            </div>
+            <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full md:pl-10 lg:pl-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
+
+              <div className="xl:w-[45rem] text-center p-1 md:p-0 md:text-start">
+                <h1 className="text-[#2c6777]  text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
+                Benefits of tutoring with us
+                </h1>
+
+                <p className="leading-relaxed xl:text-[20px] text-lg  text-gray-800 mb-4 lg:font-semibold md:font-semibold font-normal">
+                The benefits of tutoring with us extend beyond the classroom, as we invite educators like you to join our dynamic tutoring program. As part of our team, you'll have the opportunity to make a lasting impact on the lives of eager learners, helping them unlock their full academic potential.
                 </p>
               </div>
             </div>
