@@ -6,8 +6,11 @@ import B from "../../SharedComponents/Data/Tutotprofiledata/TutorProfiledata.jso
 import Navbars from "../../SharedComponents/Navbar/Navbars";
 import TutorProfile from "../Props/TutorProfile/TutorProfile";
 import Footer from "../../SharedComponents/Footer/Footer";
+import ExploreTutordata from '../../SharedComponents/Data/ExploreTutordata/ExploreTutordata.json'
 
-const TutorProfileDetails = ({ tutorId }) => {
+import ExploreTutor from "../Props/ExploreTutor";
+
+const TutorProfileDetails = ({ tutorId, }) => {
   const [navfix, setNavfix] = useState(false);
   const [showCount, setShowCount] = useState(2);
 
@@ -52,9 +55,12 @@ const TutorProfileDetails = ({ tutorId }) => {
       }
     });
   };
+  const [loadmore, setLoadMore] = useState(4)
 
   const handleLoadMore = () => {
     setShowCount(ButtonData.length);
+    setLoadMore(prevNum => prevNum + 3);
+  
     // setSelectedSubjects(ButtonData.map(subject => subject.id));
   };
 
@@ -66,7 +72,7 @@ const TutorProfileDetails = ({ tutorId }) => {
 
   return (
     <div>
-     <div className={`z-10  ${navfix ? ' top-0 h-[9%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
+     <div className={`z-20  ${navfix ? ' top-0 h-[11%] md:h-[11.5%] lg:h-[11%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
         <Navbars className='relative ' />
 
       </div>
@@ -92,24 +98,24 @@ const TutorProfileDetails = ({ tutorId }) => {
                 <div className="col-span-12 md:col-span-4 lg:col-span-3 ">
                   <div>
                     <div className=" w-auto  bg-white border border-gray-200 rounded-lg shadow p-2 ">
-                      <h5 className="mb-3 p-2 text-base font-semibold text-black text-center  rounded-t-lg  border-b-2 w-full md:text-xl ">
-                        Educational Level
+                      <h5 className="mb-3 p-2 text-base font-semibold text-[#2c6777] text-center md:text-start rounded-t-lg  border-b-2 w-full md:text-xl ">
+                        I Can Teach
                       </h5>
 
                       <select
                         id="countries"
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                       >
-                        <option>Choose a country</option>
+                        <option>Class (1-5)</option>
                         <option value="US">United States</option>
                         <option value="CA">Canada</option>
                         <option value="FR">France</option>
                         <option value="DE">Germany</option>
                       </select>
 
-                      <div>
-                        <h3 className="mb-4 font-semibold text-gray-900 ">
-                          Identification
+                      <div className="p-1">
+                        <h3 className="mb-4 font-semibold text-[#2c6777] mt-1  ">
+                          Subject
                         </h3>
 
                         {ButtonData.slice(0, showCount).map((subject) => (
@@ -141,6 +147,36 @@ const TutorProfileDetails = ({ tutorId }) => {
                           </button>
                         )}
                       </div>
+                      <select
+                        id="countries"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                      >
+                        <option>Class(6-10)</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                      </select>
+                      <select
+                        id="countries"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mt-5"
+                      >
+                        <option>Short Course </option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                      </select>
+                      <select
+                        id="countries"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mt-5 "
+                      >
+                        <option>Language Course</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -169,8 +205,55 @@ const TutorProfileDetails = ({ tutorId }) => {
                 </div>
 
             </section>
+
           </div>
+          
         </div>
+      </section>
+      
+      <section className="div3-Section w-full bg-[#dcecfa] " >
+        <div className=" mt-25   container mx-auto">
+
+
+
+
+          <div className=" p-5 md:p-0 ">
+
+            <h1 className="text-[24px] text-[#2c6777] xl:text-[30px] lg:text-[30px] md:text-[27px] text-center py-16  font-[650] max-w-xl mx-auto ">Explore Related Tutors</h1>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5  p-2 md:p-0 justify-items-center     ">
+
+
+            {
+              ExploreTutordata.slice(0, loadmore).map((exploretutordata) => (
+
+                <ExploreTutor key={exploretutordata.id} exploretutordata={exploretutordata}></ExploreTutor>
+
+              ))
+            }
+
+          </div>
+          <div className="text-center lg:mt-2 ">
+
+            {ExploreTutordata.length > loadmore && (
+              <button
+                onClick={handleLoadMore}
+                className="bg-[#2c6777] hover:bg-[#2c6777]  mb-10  text-white font-bold py-2 px-9 rounded-md "
+              >
+                Show More
+              </button>
+            )}
+
+          </div>
+
+
+
+
+        </div>
+
+
+
       </section>
       <section className="">
         <Footer />

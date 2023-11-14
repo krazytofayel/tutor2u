@@ -263,7 +263,7 @@ const Home = () => {
             {
               ExploreTutordata.slice(0, loadmore).map((exploretutordata) => (
 
-                <ExploreTutor key={exploretutordata.id} exploretutordata={exploretutordata}></ExploreTutor>
+                <ExploreTutor key={exploretutordata.id} exploretutordata={exploretutordata} handleLoadMore={handleLoadMore}></ExploreTutor>
 
               ))
             }
