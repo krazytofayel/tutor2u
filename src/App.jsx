@@ -15,6 +15,7 @@ import Blog from './Components/Pages/Blog/Blog';
 import TutorProfileDetails from './Components/Pages/TutorProfileDetailsPage/TutorProfileDetails';
 import TutionJobDetails from './Components/Pages/TutionJobDetails/TutionJobDetails';
 import TutorReviewPage from './Components/Pages/TutorreviewPage/TutorReviewPage';
+import DownloadResource from './Components/Pages/DownloadResource/DownloadResource';
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
         <Route path='/tutor_resources' element={<Resources />} />
         <Route path='/tutor_blog' element={<Blog />} />
         <Route path='/tutor_reviews' element={<TutorReviewPage />} />
+        <Route path='/tutor_download_resource' element={<DownloadResource />} />
         {/*  <Route path="/find_tutor" element={<FindTutor/>}/> */}
 
 

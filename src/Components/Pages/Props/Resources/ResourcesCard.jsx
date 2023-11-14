@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 const ResourcesCard = ({resourcecarddata}) => {
@@ -14,10 +15,10 @@ const ResourcesCard = ({resourcecarddata}) => {
             <h5 className="mb-2 text-2xl font-bold tracking-tight truncate text-[#2c6777] ">{Title}</h5>
           </a>
           <p className="mb-3 font-normal text-gray-800 line-clamp-3 ">{description}</p>
-          <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#2c6777] rounded-md focus:ring-4 focus:outline-none focus:ring-blue-300 ">
-            Read more
+          <Link  to={'/tutor_download_resource'} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#2c6777] rounded-md focus:ring-4 focus:outline-none focus:ring-blue-300 ">
+            Download Now
           
-          </a>
+          </Link>
         </div>
       </div>
 
