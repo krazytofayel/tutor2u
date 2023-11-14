@@ -20,29 +20,29 @@ const AboutUs = () => {
     window.addEventListener("scroll", setFixed);
     return (
         <>
-          <div className={`z-10  ${navfix ? ' top-0 h-[9%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
+            <div className={`z-20  ${navfix ? ' top-0 h-[10%] md:h-[11.5%] lg:h-[11%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
         <Navbars className='relative ' />
 
       </div>
             {/* About top banner start */}
 
             <section className="AboutUs_Top_Banner bg-[#2C6777]">
-                <div className="container px-5 py-10 lg:py-14 md:py-10  mx-auto mb-12">
-                    <div className=" mx-auto flex flex-wrap px-5 md:flex-row flex-col items-center">
+                <div className="container py-10 lg:py-14 md:py-10  mx-auto mb-12">
+                    <div className=" mx-auto flex flex-wrap md:flex-row flex-col items-center p-2 xl:p-2">
                         <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
-                            <div className="xl:w-[45rem]">
+                            <div className="xl:w-[45rem] text-center md:text-start">
                                 <h1 className="text-white text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
-                                About Us
+                                    About Us
                                 </h1>
 
                                 <p className="leading-relaxed xl:text-[20px] text-lg text-white mb-4 lg:font-semibold md:font-semibold font-normal">
-                                Established on (Date where tutor2u started) Welcome to our world of excellence in education! At Tutor2U, we believe that every learners deserves the best educators who can inspire, guide, and transform their academic journey.Our tutor sessions are carefully designed to provide a personalized and enriching learning experience. With diverse backgrounds and expertise; Tutor2U educators are equipped with exceptional qualifications and a commitment to excellence.
-                                  
+                                    Established on (Date where tutor2u started) Welcome to our world of excellence in education! At Tutor2U, we believe that every learners deserves the best educators who can inspire, guide, and transform their academic journey.Our tutor sessions are carefully designed to provide a personalized and enriching learning experience. With diverse backgrounds and expertise; Tutor2U educators are equipped with exceptional qualifications and a commitment to excellence.
+
                                 </p>
                             </div>
                         </div>
 
-                        <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center">
+                        <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover flex justify-center md:justify-end">
                             <img alt="Top-Banner-Side-Image" className=" " src={aboutsideimg} />
                         </div>
                     </div>
@@ -60,13 +60,13 @@ const AboutUs = () => {
                             <img alt="Top-Banner-Side-Image" className=" " src={problemresolvedsideimg} />
                         </div>
                         <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5 ">
-                            <div className="xl:w-[48rem] xl:ml-10  md:ml-5">
+                            <div className="xl:w-[48rem] xl:ml-10  md:ml-5 text-center md:text-start">
                                 <h1 className="text-[#2c6777]  text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
                                     The Problem Revealed
                                 </h1>
 
                                 <p className="leading-relaxed xl:text-[20px] text-lg text-gray-800 mb-4 lg:font-semibold md:font-semibold font-normal">
-                                Students and parents seek personal tutors because tutoring provides personalized support for their educational and personal development needs. We are one with educators with a mission to reduce learning difficulties and develop the Emotional Intelligence required to tailor lessons to each student's learning style.
+                                    Students and parents seek personal tutors because tutoring provides personalized support for their educational and personal development needs. We are one with educators with a mission to reduce learning difficulties and develop the Emotional Intelligence required to tailor lessons to each student's learning style.
                                 </p>
                             </div>
                         </div>
@@ -77,21 +77,21 @@ const AboutUs = () => {
 
             {/* Our Solution section start */}
             <section className="AboutUs_Top_Banner bg-[#DCECFA]">
-                <div className="container px-5 py-10 lg:py-20 md:py-10  mx-auto mb-12">
-                    <div className=" mx-auto flex flex-wrap px-5 md:flex-row flex-col items-center">
+                <div className="container  py-10 lg:py-20 md:py-10  mx-auto mb-12">
+                    <div className=" mx-auto flex flex-wrap md:flex-row flex-col items-center p-2 md:-p-0">
                         <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
-                            <div className="xl:w-[45rem]">
+                            <div className="xl:w-[45rem] text-center md:text-start">
                                 <h1 className="text-[#2c6777] text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
                                     Our Solution
                                 </h1>
 
                                 <p className="leading-relaxed xl:text-[20px] text-lg text-gray-800 mb-4 lg:font-semibold md:font-semibold font-normal">
-                                Our tutors are not just educators; they are mentors, guides, and friends who bring emotional intelligence to the forefront of the learning experience. We care about the fact that every student is unique and that's why we have the best tutors who are equipped with the ability to connect on a personal level. This can contribute in building trust and rapport to ensure that students feel comfortable during the sessions
+                                    Our tutors are not just educators; they are mentors, guides, and friends who bring emotional intelligence to the forefront of the learning experience. We care about the fact that every student is unique and that's why we have the best tutors who are equipped with the ability to connect on a personal level. This can contribute in building trust and rapport to ensure that students feel comfortable during the sessions
                                 </p>
                             </div>
                         </div>
 
-                        <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center">
+                        <div className=" xl:w-2/6 lg:w-2/4  md:w-1/2 w-full lg:h-auto h-auto object-cover object-center flex justify-center md:justify-end">
                             <img alt="Top-Banner-Side-Image" className="mt-5 " src={solutionsideimg} />
                         </div>
                     </div>
@@ -165,7 +165,7 @@ const AboutUs = () => {
                 <div className="container px-5 py-10 lg:py-14 md:py-10  mx-auto ">
                     <div className=" mx-auto flex flex-wrap px-5 md:flex-row flex-col items-center">
                         <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
-                            <div className="xl:w-[45rem]">
+                            <div className="xl:w-[45rem] text-center md:text-start">
                                 <h1 className="text-[#2c6777] text-[24px] xl:text-[30px] lg:text-[30px] md:text-[26px] title-font font-bold mb-2 ">
                                     Our Mission
                                 </h1>
@@ -176,13 +176,13 @@ const AboutUs = () => {
                                     knowledge in the education industry.
                                 </p>
                             </div>
-                            <div className="xl:w-[45rem]">
+                            <div className="xl:w-[45rem] text-center md:text-start">
                                 <h1 className="text-[#2c6777] text-[24px] xl:text-[30px] lg:text-[30px] md:text-[26px] title-font font-bold mt-10 mb-2 ">
                                     Our Goal
                                 </h1>
 
                                 <p className="leading-relaxed xl:text-[20px] text-lg text-gray-800 mb-4 lg:font-semibold md:font-semibold font-normal">
-                                To be the leading online tutoring platform that empowers students to achieve academic excellence and gain confidence and unlock their full potential.
+                                    To be the leading online tutoring platform that empowers students to achieve academic excellence and gain confidence and unlock their full potential.
                                 </p>
                             </div>
                         </div>
@@ -197,17 +197,17 @@ const AboutUs = () => {
 
             {/* Faq section start */}
             <section className="FAQ-section ">
-          
-         
+
+
                 <div className=" lg:p-5">
-               
-                <h1 className="title-font text-[#2c6777] text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mt-12 mb-12 text-center">
-                            Frequently Asked Questions
-                        </h1>
+
+                    <h1 className="title-font text-[#2c6777] text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mt-12 mb-12 text-center">
+                        Frequently Asked Questions
+                    </h1>
                     <div className="container mx-auto">
 
-                  
-                    
+
+
                         <div className="grid grid-cols-12 gap-4  p-2">
                             {/* large div */}
                             <div className="col-span-12 lg:col-span-9 mb-6 lg:mb-0">
@@ -221,7 +221,7 @@ const AboutUs = () => {
                                     <Accordion collapseAll>
                                         <Accordion.Panel>
                                             <Accordion.Title>
-                                            1.What makes a good tutor? 
+                                                1.What makes a good tutor?
                                             </Accordion.Title>
                                             <Accordion.Content>
                                                 <p className="mb-2 text-gray-500 ">
@@ -250,12 +250,12 @@ const AboutUs = () => {
                                         </Accordion.Panel>
                                         <Accordion.Panel>
                                             <Accordion.Title>
-                                            2. Which tutor is right for you?
+                                                2. Which tutor is right for you?
                                             </Accordion.Title>
                                             <Accordion.Content>
                                                 <p className="mb-2 text-gray-500 ">
                                                     <p>
-                                                    Before you look for a tutor, it's helpful to have a really clear idea of exactly where your child needs help - whether with a specific English Literature text, one area of Maths or their exam technique - and filter your choices accordingly. If you're not sure where they need to focus, having a chat with them or their teacher can help you work out the best place to start. In a free meeting, you can then ask the tutor any questions you like and see how well they get on with your child before deciding to book.
+                                                        Before you look for a tutor, it's helpful to have a really clear idea of exactly where your child needs help - whether with a specific English Literature text, one area of Maths or their exam technique - and filter your choices accordingly. If you're not sure where they need to focus, having a chat with them or their teacher can help you work out the best place to start. In a free meeting, you can then ask the tutor any questions you like and see how well they get on with your child before deciding to book.
                                                     </p>
                                                 </p>
                                                 <p className="text-gray-500 ">
@@ -278,7 +278,7 @@ const AboutUs = () => {
                                         </Accordion.Panel>
                                         <Accordion.Panel>
                                             <Accordion.Title>
-                                            3. Why is online tutoring important?
+                                                3. Why is online tutoring important?
                                             </Accordion.Title>
                                             <Accordion.Content>
                                                 <p className="mb-2 text-gray-500 ">
@@ -324,7 +324,7 @@ const AboutUs = () => {
                                         </Accordion.Panel>
                                         <Accordion.Panel>
                                             <Accordion.Title>
-                                            4. What are the benefits of online tutoring?
+                                                4. What are the benefits of online tutoring?
                                             </Accordion.Title>
                                             <Accordion.Content>
                                                 <p className="mb-2 text-gray-500 ">
@@ -370,7 +370,7 @@ const AboutUs = () => {
                                         </Accordion.Panel>
                                         <Accordion.Panel>
                                             <Accordion.Title>
-                                            5. How to find a tutor?
+                                                5. How to find a tutor?
                                             </Accordion.Title>
                                             <Accordion.Content>
                                                 <p className="mb-2 text-gray-500 ">
@@ -414,7 +414,7 @@ const AboutUs = () => {
                                                 </ul>
                                             </Accordion.Content>
                                         </Accordion.Panel>
-                                      
+
                                     </Accordion>
 
 
@@ -432,7 +432,7 @@ const AboutUs = () => {
                                                 Any Question
                                             </h1>
                                             <p className="  mx-auto  font-normal   mb-4 text-white ">
-                                            Do you have questions? We have answers. Check the most frequently asked questions regarding Kick-Ass Seniors
+                                                Do you have questions? We have answers. Check the most frequently asked questions regarding Kick-Ass Seniors
                                             </p>
                                         </div>
 
@@ -457,8 +457,8 @@ const AboutUs = () => {
             {/* FAQ section end */}
 
             <section className="">
-        <Footer />
-      </section>
+                <Footer />
+            </section>
 
         </>
     );
