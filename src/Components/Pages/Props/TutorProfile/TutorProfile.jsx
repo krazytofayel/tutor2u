@@ -135,7 +135,7 @@ const TutorProfile = ({ TutorProfileProps }) => {
       <div className="w-full  p-4 mt-5 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8">
         <div className="flex flex-wrap border-b-2  ">
           <div className="flex items-center gap-2 border-[#373A3F] border-r-2 mb-2 "><AiOutlineHome /> <p className="mr-2 font-semibold text-[#2c6777]">Introduction</p></div>
-          <div className="flex items-center gap-2  ml-2 mb-2"><GoCodeReview /> <p className="mr-2 font-semibold text-[#2c6777]">Review</p></div>
+          <div className="flex items-center gap-2  ml-2 mb-2"><GoCodeReview /> <Link to={'/tutor_reviews'} className="mr-2 font-semibold text-[#2c6777]">Review</Link></div>
 
         </div>
         <div className="font-normal text-sm text-start border-b-2">
