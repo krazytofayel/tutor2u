@@ -28,24 +28,24 @@ const BecomeaTutor = () => {
 
   return (
     <>
-     <div className={`z-10  ${navfix ? ' top-0 h-[9%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
+      <div className={`z-10  ${navfix ? ' top-0 h-[11%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
         <Navbars className='relative ' />
 
       </div>
 
 
-  
+
       <section className="ContactUs_Top_Banner bg-[#2C6777]">
         <div className="container mx-auto py-20 ">
           <div className=" mx-auto flex flex-wrap  md:flex-row flex-col items-center">
             <div className="xl:w-4/6 lg:w-2/4 md:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
               <div className="xl:w-[45rem]">
                 <h1 className="text-white text-center md:text-start text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
-                Be an Educator
+                  Be an Educator
                 </h1>
 
                 <p className="leading-relaxed text-center md:text-start xl:text-[20px] text-lg text-white mb-4 lg:font-semibold md:font-semibold font-normal">
-                Join us in shaping the future of our students, and embark on a rewarding journey as an integral member of our tutoring program. Your passion for teaching will find a meaningful home here.
+                  Join us in shaping the future of our students, and embark on a rewarding journey as an integral member of our tutoring program. Your passion for teaching will find a meaningful home here.
                 </p>
               </div>
             </div>
@@ -66,12 +66,12 @@ const BecomeaTutor = () => {
             <div className="xl:w-4/6 lg:w-2/4 md:w-1/2  w-full lg:pl-10 lg:py-6 mb-6 lg:mb-0 md:pr-5">
 
               <div className="xl:w-[45rem]">
-                <h1 className="text-gray-800 text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
-                Benefits of tutoring with us
+                <h1 className="text-[#2c6777] text-[24px] xl:text-[40px] lg:text-[36px] md:text-[27px] title-font font-bold mb-4 ">
+                  Benefits of tutoring with us
                 </h1>
 
                 <p className="leading-relaxed xl:text-[20px] text-lg text-black mb-4 lg:font-semibold md:font-semibold font-normal">
-                The benefits of tutoring with us extend beyond the classroom, as we invite educators like you to join our dynamic tutoring program. As part of our team, you'll have the opportunity to make a lasting impact on the lives of eager learners, helping them unlock their full academic potential.
+                  The benefits of tutoring with us extend beyond the classroom, as we invite educators like you to join our dynamic tutoring program. As part of our team, you'll have the opportunity to make a lasting impact on the lives of eager learners, helping them unlock their full academic potential.
                 </p>
               </div>
             </div>
@@ -88,7 +88,7 @@ const BecomeaTutor = () => {
           <div className="container mx-auto">
 
 
-            <h3 className="text-3xl text-gray-800 font-bold mb-2 py-2 ml-3">Get in Touch</h3>
+            <h3 className="text-3xl text-[#2c6777] font-bold mb-2 py-2 ml-3">Get in Touch</h3>
             <div className="grid grid-cols-12 gap-5  p-2">
 
               <div className="col-span-12 ">
@@ -105,6 +105,14 @@ const BecomeaTutor = () => {
                           />
                         </div>
                         <div className="mb-2">
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Hourly Fee:</label>
+                          <input type="number" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Your Hourly Pay" required
+
+
+                            {...register('Last_Name')}
+                          />
+                        </div>
+                        <div className="mb-2">
                           <label className="block mb-2 text-sm font-medium text-gray-900 ">Last Name:</label>
                           <input type="text" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your last name" required
 
@@ -117,28 +125,21 @@ const BecomeaTutor = () => {
                           <input type="text" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your last name" required
 
 
-                            {...register('Last_Name')}
+                            {...register('Enter your Tagline')}
                           />
                         </div>
-                        <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Hourly Fee:</label>
-                          <input type="number" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your last name" required
 
-
-                            {...register('Last_Name')}
-                          />
-                        </div>
                         <div className="row-start-1 row-end-3 ">
-                        <ImageUpload/>
+                          <ImageUpload />
                         </div>
 
 
 
-                       
 
-                      
+
+
                       </div>
-                     
+
                       {/* <div className="grid md:grid-cols-2 mt-10 md:gap-6">
                         <div className="mb-2">
                           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number:</label>
@@ -157,25 +158,46 @@ const BecomeaTutor = () => {
                         </div>
 
                       </div> */}
-                       <div className="grid md:grid-cols-3 mt-10 md:gap-6">
+                      <div className="grid md:grid-cols-3 mt-10 md:gap-6">
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Phone Number:</label>
-                          <input type="number" id="Phone_Number" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your phone number" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900">Country:</label>
+                          <select
+                            id="Country"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            defaultValue=""
+                            required
+                            {...register("Country")}
+                          >
+                            <option value="" disabled hidden>
+                              Select your country
+                            </option>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
 
-                            {...register("Phone_Number")}
-                          />
+                          </select>
                         </div>
+
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Email Address:</label>
-                          <input type="text" id="Email_Address" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your email address" required
-
-                            {...register("Email_Address")}
-
-                          />
+                          <label className="block mb-2 text-sm font-medium text-gray-900">City:</label>
+                          <select
+                            id="Country"
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                            defaultValue="" // Set default value if needed
+                            required
+                            {...register("Country")} // Assuming this is the name for the form control
+                          >
+                            <option value="" disabled hidden>
+                              Select your country
+                            </option>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            {/* Add more options as needed */}
+                          </select>
                         </div>
+
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Email Address:</label>
-                          <input type="text" id="Email_Address" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your email address" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Zip Code:</label>
+                          <input type="text" id="Email_Address" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter zip code" required
 
                             {...register("Email_Address")}
 
@@ -184,16 +206,34 @@ const BecomeaTutor = () => {
 
                       </div>
                       <div className="mb-2">
-                        <label className="block mb-2 text-sm font-medium text-gray-900 ">Subject:</label>
+                        <label className="block mb-2 text-sm font-medium text-gray-900">Language:</label>
+                        <select
+                          id="Country"
+                          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                          defaultValue="" // Set default value if needed
+                          required
+                          {...register("Country")} // Assuming this is the name for the form control
+                        >
+                          <option value="" disabled hidden>
+                            Select languages you know
+                          </option>
+                          <option value="USA">USA</option>
+                          <option value="Canada">Canada</option>
+                          {/* Add more options as needed */}
+                        </select>
+                      </div>
+                      <div className="mb-2">
+                        <label className="block mb-2 text-sm font-medium text-gray-900 ">I Can Teach On:</label>
                         <input type="text" id="Subject" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter Subject" required
 
                           {...register("Subject")}
                         />
                       </div>
 
+
                       <div className="mb-2">
 
-                        <label className="block mb-2 text-sm font-medium text-gray-900 ">Comment</label>
+                        <label className="block mb-2 text-sm font-medium text-gray-900 ">A Short Brief</label>
                         <textarea id="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 " placeholder="Leave a comment..."></textarea>
 
                       </div>
@@ -207,7 +247,7 @@ const BecomeaTutor = () => {
 
 
 
-                    
+
 
                   </div>
 
@@ -223,22 +263,22 @@ const BecomeaTutor = () => {
                   <div className=" w-auto  bg-white border border-gray-200 rounded-lg shadow">
 
                     <h5 className="mb-3 p-2 text-base font-semibold bg-[#2c6777] text-white text-center  rounded-t-lg  border-b-2 w-full md:text-xl ">
-                      Do You Have Any Questions?
+                      Contact Details
                     </h5>
 
 
                     <div className="p-4">
                       <div className="grid md:grid-cols-2 md:gap-6">
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 ">First Name:</label>
-                          <input type="text" id="First_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your first name" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Phone Number:</label>
+                          <input type="text" id="First_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your phone Number" required
 
                             {...register('First_Name')}
                           />
                         </div>
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Last Name:</label>
-                          <input type="text" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your last name" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Email Address:</label>
+                          <input type="text" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your email" required
 
 
                             {...register('Last_Name')}
@@ -248,15 +288,15 @@ const BecomeaTutor = () => {
                       </div>
                       <div className="grid md:grid-cols-2 md:gap-6">
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 ">First Name:</label>
-                          <input type="text" id="First_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your first name" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Street Address:</label>
+                          <input type="text" id="First_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your address" required
 
                             {...register('First_Name')}
                           />
                         </div>
                         <div className="mb-2">
-                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Last Name:</label>
-                          <input type="text" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your last name" required
+                          <label className="block mb-2 text-sm font-medium text-gray-900 ">Date Of Birth:</label>
+                          <input type="text" id="Last_Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Enter your date of birth" required
 
 
                             {...register('Last_Name')}
@@ -288,7 +328,7 @@ const BecomeaTutor = () => {
       <section className="">
         <Footer />
       </section>
-    
+
 
     </>
   )
