@@ -19,14 +19,19 @@ const TutionJob = () => {
     { id: 2, buttoncontant: "English" },
     { id: 3, buttoncontant: "History" },
   ];
+  const ButtonData2 = [
+    { id: 1, buttoncontant: "Any Gender" },
+    { id: 2, buttoncontant: "Male" },
+    { id: 3, buttoncontant: "Female" },
+  ];
   return (
     <>
-       <div className={`z-10  ${navfix ? ' top-0 h-[9%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
+        <div className={`z-20  ${navfix ? ' top-0 h-[9%] md:h-[11.5%] lg:h-[11%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
         <Navbars className='relative ' />
 
       </div>
       <section className="Contact_Us_Middle ">
-        <div className="h-screen  bg-[#F0F8FF] lg:p-16">
+        <div className=" bg-[#F0F8FF] lg:p-16">
 
 
           <div className="container mx-auto">
@@ -35,7 +40,7 @@ const TutionJob = () => {
             <h3 className="text-2xl text-[#2c6777] md:text-3xl font-bold ml-3 mb-2 mx-3">Get in Touch</h3>
             <div className="grid grid-cols-12 gap-5 lg:gap-12  p-2">
 
-              <div className="col-span-12 lg:col-span-9 mb-6 lg:mb-0">
+              <div className="col-span-12 lg:col-span-8 mb-6 lg:mb-0">
 
                 <form action="" >
 
@@ -105,13 +110,13 @@ const TutionJob = () => {
 
               </div>
               
-              <div className="col-span-12 lg:col-span-3 ">
+              <div className="col-span-12 lg:col-span-4 ">
 
                 <div>
                   <div className=" w-auto  bg-white border border-gray-200 rounded-lg shadow ">
 
-                    <h5 className="mb-3 p-2 text-base font-semibold bg-[#2c6777] text-white text-center  rounded-t-lg  border-b-2 w-full md:text-xl ">
-                      Do You Have Any Questions?
+                    <h5 className="mb-3 p-2 text-base font-semibold  text-[#2c6777] text-start  rounded-t-lg  border-b-2 w-full md:text-xl ">
+                      Tution Categary
                     </h5>
 
 
@@ -122,7 +127,7 @@ const TutionJob = () => {
                           <button
                             key={btn.id}
                             type="button"
-                            className="text-gray-800 bg-white hover:bg-[#089bab] focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center"
+                            className="text-gray-800 bg-white hover:bg-[#089bab] border focus:ring-4 focus:outline-none hover:text-white focus:ring-blue-200 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center"
 
                           >
                             {btn.buttoncontant}
@@ -130,6 +135,58 @@ const TutionJob = () => {
                           </button>
                         ))}
                       </div>
+                      
+                      <select id="countries" className="mt-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                        <option >Select Class</option>
+                        <option value="US">5</option>
+                        <option value="CA">10</option>
+                        <option value="FR">12</option>
+                        <option value="DE">14</option>
+                      </select>
+                      <select id="countries" className="mt-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                        <option >Select Range</option>
+                        <option value="US">500</option>
+                        <option value="CA">200</option>
+                        <option value="FR">100</option>
+                        <option value="DE">50</option>
+                      </select>
+
+                     <div>
+                     <h1 className='text-[#2c6777] ml-1 font-semibold mt-2 text-lg'>Tutor Gender</h1>
+                      <div className="flex flex-wrap  gap-2 mt-3">
+                        {ButtonData2.map((btn) => (
+                          <button
+                            key={btn.id}
+                            type="button"
+                            className="text-gray-800 bg-white hover:bg-[#089bab] border focus:ring-4 focus:outline-none hover:text-white focus:ring-blue-200 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center"
+
+                          >
+                            {btn.buttoncontant}
+                            <RxCross2 className="ml-3 h-3.5 w-3.5" />
+                          </button>
+                        ))}
+                      </div>
+                     </div>
+                     <div>
+                     <h1 className='text-[#2c6777] ml-1 font-semibold mt-2 text-lg'>Student Gender</h1>
+                      <div className="flex flex-wrap  gap-2 mt-3">
+                        {ButtonData2.map((btn) => (
+                          <button
+                            key={btn.id}
+                            type="button"
+                            className="text-gray-800 bg-white hover:bg-[#089bab] border focus:ring-4 focus:outline-none hover:text-white focus:ring-blue-200 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center"
+
+                          >
+                            {btn.buttoncontant}
+                            <RxCross2 className="ml-3 h-3.5 w-3.5" />
+                          </button>
+                        ))}
+                      </div>
+                     </div>
+
+                     <div>
+                      <button className='font-semibold text-[#fdffff] bg-[#2c6777] px-3 py-1 rounded-md w-full mt-5'>Filter Tution</button>
+                     </div>
 
                     </div>
 
