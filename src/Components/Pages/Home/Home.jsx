@@ -33,7 +33,7 @@ const Home = () => {
       <div
         className={`z-20  ${
           navfix
-            ? " top-0 h-[9%] md:h-[11.5%] lg:h-[8%]  shadow-lg w-full fixed bg-white transition-all duration-300 ease-in-out "
+            ? "fixed top-0  shadow-lg w-full  bg-white transition-all duration-300 ease-in-out "
             : ""
         }`}
       >
