@@ -29,7 +29,7 @@ const ExploreTutor = ({ exploretutordata }) => {
                   {city}
                 </p>
               </div>
-              <div className="inline-flex items-center text-xl font-medium text-[#2c6777] ">
+              <div className="inline-flex items-center text-xl font-medium text-[#2c6777]">
               <AiOutlineHeart></AiOutlineHeart>
               </div>
             </div>
@@ -43,7 +43,7 @@ const ExploreTutor = ({ exploretutordata }) => {
                 </p>
 
               </div>
-              <div className=" text-sm font-semibold  text-[#2c6777]">
+              <div className=" text-sm font-semibold  text-[#000000]">
                 {phone}
               </div>
             </div>
@@ -55,7 +55,7 @@ const ExploreTutor = ({ exploretutordata }) => {
                 </p>
 
               </div>
-              <div className=" text-sm font-semibold  text-[#2c6777] ">
+              <div className=" text-sm font-semibold  text-[#000000] ">
                 {email}
               </div>
             </div>
@@ -67,7 +67,7 @@ const ExploreTutor = ({ exploretutordata }) => {
                 </p>
 
               </div>
-              <div className="text-sm font-semibold  text-[#2c6777] ">
+              <div className="text-sm font-semibold  text-[#000000] ">
                 {balance}
               </div>
             </div>
@@ -80,7 +80,7 @@ const ExploreTutor = ({ exploretutordata }) => {
                 </p>
 
               </div>
-              <div className="text-sm font-semibold  text-[#2c6777] ">
+              <div className="text-sm font-semibold  text-[#000000] ">
                 B.Tech/B.E.
               </div>
             </div>
