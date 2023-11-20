@@ -95,8 +95,8 @@ const ExploreTutor = ({ exploretutordata }) => {
 
 
               <span className=" text-black text-sm font-bold  ml-3">5.0 (10000)</span> */}
-              <button className='px-3 rounded-md border text-sm py-1 bg-[#EDEFEE] hover:bg-[#2c6777] hover:text-white shadow-lg'>View Profile</button>
-              <button className='px-3 rounded-md border text-sm py-1 bg-[#DBF1FF] hover:bg-[#2c6777] hover:text-white shadow-lg'>Contact Tutor</button>
+              <button className='px-3 rounded-md border text-sm font-medium py-1 bg-[#EDEFEE] hover:bg-[#2c6777] hover:text-white shadow-lg'>View Profile</button>
+              <button className='px-3 rounded-md border text-sm font-medium py-1 bg-[#DBF1FF] hover:bg-[#2c6777] hover:text-white shadow-lg'>Contact Tutor</button>
             </div>
           </div>
         </div>
