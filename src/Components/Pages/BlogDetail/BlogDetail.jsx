@@ -31,9 +31,14 @@ const BlogDetail = () => {
     window.addEventListener('scroll', setFixed);
     return (
         <>
-          <div className={`z-10  ${navfix ? ' top-0 h-[9%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
-        <Navbars className='relative ' />
-
+           <div
+        className={`z-20  ${
+          navfix
+            ? "fixed top-0  shadow-lg w-full  bg-white transition-all duration-300 ease-in-out "
+            : ""
+        }`}
+      >
+        <Navbars className="relative " />
       </div>
             <section className="bg-[#F0F8FF] py-20">
                 <div class="container px-5 pt-24 mx-auto">

@@ -28,11 +28,15 @@ const BecomeaTutor = () => {
 
   return (
     <>
-      <div className={`z-10  ${navfix ? ' top-0 h-[11%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
-        <Navbars className='relative ' />
-
+        <div
+        className={`z-20  ${
+          navfix
+            ? "fixed top-0  shadow-lg w-full  bg-white transition-all duration-300 ease-in-out "
+            : ""
+        }`}
+      >
+        <Navbars className="relative " />
       </div>
-
 
 
       <section className="ContactUs_Top_Banner bg-[#2C6777]">

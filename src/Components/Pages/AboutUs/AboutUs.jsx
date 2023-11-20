@@ -20,9 +20,14 @@ const AboutUs = () => {
     window.addEventListener("scroll", setFixed);
     return (
         <>
-            <div className={`z-20  ${navfix ? ' top-0 h-[10%] md:h-[11.5%] lg:h-[11%] w-full fixed bg-white transition-all duration-300 ease-in-out ' : ''}`} >
-        <Navbars className='relative ' />
-
+             <div
+        className={`z-20  ${
+          navfix
+            ? "fixed top-0  shadow-lg w-full  bg-white transition-all duration-300 ease-in-out "
+            : ""
+        }`}
+      >
+        <Navbars className="relative " />
       </div>
             {/* About top banner start */}
 
