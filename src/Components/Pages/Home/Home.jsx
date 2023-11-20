@@ -138,7 +138,7 @@ const Home = () => {
         </div>
       </section> */}
 
-      <section className="h-full w-screen place-items-center bg-[#ffffff]   relative px-8 py-8 lg:mb-36 ">
+      <section className="h-full w-full place-items-center bg-[#ffffff]   relative py-14 lg:mb-20 ">
         <div className="container mx-auto grid items-center lg:grid-cols-2">
           <div className="text-center lg:text-left pt-10">
             <div className="mb-8 inline-flex items-center">
@@ -202,7 +202,7 @@ const Home = () => {
           <img
             src={homebg1}
             alt="components"
-            className="absolute top-0 right-0  "
+            className="absolute h-full top-0 right-0  "
           />
         </div>
       </section>
